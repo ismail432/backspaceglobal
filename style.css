@@ -1,0 +1,1942 @@
+/*
+	Theme Name: backspaceglobal
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+	Text Domain: backspace
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+
+
+body {
+    font-family: 'Merriweather', serif;
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+    word-wrap: break-word;
+    color: #000;
+    background: #fff;
+    overflow-x: hidden;
+    font-weight: 300;
+}
+
+
+
+a {
+    font-family: 'Merriweather', serif;
+    color: #333;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+a,
+a > * {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    outline: none;
+    color: #333;
+    text-decoration: none;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+-------------------------------------------
+2. Typography Area
+-------------------------------------------
+*/
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather', serif;
+    padding: 0;
+    margin: 0 0 0;
+    letter-spacing: -1px;
+}
+
+h1 {
+
+    font-size: 54px;
+    color: #000000;
+    line-height: 60px;
+    letter-spacing: -2px;
+
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    line-height: 45px;
+
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 40px;
+
+}
+
+h4 {
+    font-size: 26px;
+    line-height: 24px;
+
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 20px;
+
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 16px;
+}
+
+
+
+p {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+label {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.section {
+    margin-top: 70px !important;
+}
+
+button:focus {
+    outline: 0;
+}
+
+/*--------------------------------
+        Header Area
+---------------------------------*/
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
+    padding: 0;
+    height: 75px;
+    line-height: 75px;
+    background: #fff;
+    box-shadow: 5px 0 5px #dee2e6;
+}
+
+.header-sec .navbar-light .navbar-brand {
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+.header-sec .navbar-light .navbar-nav .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 15px;
+    position: relative;
+}
+
+.header-sec .search {
+    background: #000;
+    padding: 0 40px;
+    color: #fff;
+    margin-right: -17px;
+}
+
+.header-sec .search a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.nav-right-side li {
+    padding: 0 20px;
+    border-left: 1px solid #c8c8c8;
+}
+
+.nav-right-side a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #929191;
+}
+
+/*============================
+		Banner CSS
+==============================*/
+
+
+.banner-sec {
+    background-color: #fff;
+    background-image: url("assets/images/banner-top-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+
+.banner-social {
+    position: absolute;
+    top: 35%;
+    left: 40px;
+}
+
+.banner-social li {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.banner-social span {
+    height: 50px;
+    width: 3px;
+    background: #000;
+    display: block;
+    margin-left: 7px;
+}
+
+.banner-text h1 {
+    font-weight: 300;
+    color: #000000;
+    margin-top: 150px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#text {
+    background: #000;
+    font-size: 45px;
+    color: #fff;
+    padding: 15px;
+    display: inline-block;
+    height: 60px;
+    padding-top: 10px;
+    line-height: 40px;
+    padding-right: 75px;
+}
+
+.underscore {
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    left: 5px;
+    font-size: 45px;
+    color: #fff;
+    margin-left: -65px;
+    height: 50px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.banner-text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 50px;
+    color: #000;
+    position: absolute;
+    left: 15px;
+    top: 300px;
+
+}
+
+.banner-text h3 a {
+    font-weight: 600;
+    border-bottom: 2px solid #333;
+}
+
+/*============================
+		Service CSS
+==============================*/
+.service-sec {
+    background: url(assets/images/services-bg.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.service-sec .title h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 38px;
+    margin-bottom: 90px;
+}
+
+.service-item {
+    padding: 0 15px;
+}
+
+.service-image img {
+    width: 175px !important;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.service-text h4 {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 20px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+
+}
+
+.service-text h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+
+}
+
+.service-text p {
+    font-size: 15px;
+    color: #808080;
+}
+
+.service-text {
+    margin-top: -85px;
+}
+
+.second-service {
+    margin-top: -125px;
+}
+
+.all-services a {
+    color: #fff;
+    border: 1px dotted #fff;
+    margin-top: 140px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.service-slider .owl-nav {
+    display: block !important;
+    position: absolute;
+    right: 0;
+    bottom: -185px;
+    border: 1px solid #fff;
+    padding: 2px;
+}
+
+.service-slider .owl-nav button.owl-prev {
+    color: #000;
+    background: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 25px;
+    height: 25px;
+}
+
+.service-slider .owl-nav button.owl-next {
+    color: #000;
+    background: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 25px;
+    height: 25px;
+}
+
+/*============================
+		Brand CSS
+==============================*/
+.brand-sec {
+    background: #fff;
+}
+
+
+.brand-title h2 {
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 65px;
+}
+
+.brand-btn {
+    margin-top: 0 !important;
+}
+
+.brand-image img {
+    height: 500px;
+    position: relative;
+}
+
+.brand-text {
+    background: #fff;
+    margin-top: -175px;
+    position: absolute;
+    width: 220px;
+    left: 35px;
+    z-index: 999;
+    padding: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.brand-item:hover .brand-text {
+    opacity: 1;
+}
+
+.brand-text h3 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.brand-text p {
+    color: #a1a7aa;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.dots-icon {
+    font-size: 25px;
+    margin-top: 26px;
+    margin-left: 50px;
+}
+
+.brand-slider .owl-nav {
+    display: block !important;
+    position: absolute;
+    left: -55%;
+    bottom: 32%;
+}
+
+.brand-slider .owl-nav img {
+    width: 40px;
+    margin: 22px;
+}
+
+
+/*============================
+		Review Area CSS
+==============================*/
+
+.review-sec {
+    background-color: #fff;
+    background-image: url(assets/images/testimonial-bg.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.review-title h2 {
+    font-size: 38px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 65px;
+}
+
+.contact-btn a {
+    float: right;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+
+}
+
+.review-slider-bg {
+    position: relative;
+}
+
+.review-slider-bg:before {
+    content: '';
+    position: absolute;
+    width: 108%;
+    left: -4%;
+    height: 86%;
+    top: 7%;
+    background: #fff;
+    box-shadow: 5px 0 10px #dee2e6;
+}
+
+.review-item {
+    background: #fff;
+    width: 100%;
+    height: 415px;
+    box-shadow: -15px 0 100px #777;
+}
+
+
+.review-image {
+    float: left;
+    width: 30% !important;
+}
+
+.review-image img {
+    height: 415px;
+}
+
+.review-text {
+    text-align: center;
+    width: 70%;
+    float: right;
+}
+
+.review-text h3 {
+    font-size: 30px;
+    color: #000;
+    padding: 75px 100px;
+    line-height: 1.5;
+
+}
+
+.review-text h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #000000;
+}
+
+.review-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #999999;
+}
+
+.review-slider {
+    position: relative;
+}
+
+.review-slider button.owl-prev {
+    position: absolute;
+    left: -75px;
+    top: 45%;
+}
+
+.review-slider button.owl-next {
+    position: absolute;
+    right: -75px;
+    top: 45%;
+}
+
+/*============================
+		Team CSS
+==============================*/
+
+.team-sec {
+    background-color: #fff;
+    background-image: url(assets/images/team-bg.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.team-title {
+    margin-top: 50px;
+    width: 350px;
+}
+
+.team-title h2 {
+    font-size: 38px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.hiring-btn {
+    background: #000;
+    padding: 15px 30px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.hiring-btn a {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.hiring-btn:hover {
+    color: #fff;
+}
+
+.hiring-btn span {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    display: block;
+    color: #afafaf;
+    margin-top: 5px;
+}
+
+.card-header,
+.card {
+    border: 0;
+    background: #fff;
+}
+
+.card {
+    border-bottom: 1px solid #888 !important;
+}
+
+.card-header {
+    padding: 20px 0;
+}
+
+.card-header span {
+    float: left;
+}
+
+.card-header i {
+    float: right;
+    margin-top: 10px;
+}
+
+.card-header h2 button {
+    font-size: 28px;
+    color: #000000 !important;
+    background: #fff;
+    width: 100%;
+    display: block;
+}
+
+.card-header h2 button:hover,
+.card-header h2 button:active {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.accrodion-part li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.accrodion-part li:after {
+    position: absolute;
+    content: '';
+    left: -20px;
+    top: 4px;
+    background: #000;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.accrodion-part li p {
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 40px;
+    font-family: 'Merriweather', serif;
+    line-height: 1.2
+}
+
+.apply-btn {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid #333;
+    padding: 15px 30px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.more-btn {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 2px solid #333;
+    margin-left: 25px;
+
+}
+
+/*============================
+		Team Banner CSS
+==============================*/
+.team-banner-text {
+    padding-top: 230px;
+    padding-bottom: 150px;
+}
+
+.team-banner-text h2 {
+    font-size: 50px;
+    line-height: 1.5;
+    padding-right: 50px;
+    color: #000;
+}
+
+.team-banner-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding-right: 220px;
+    line-height: 1.5;
+    color: #000;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.team-banner-image img {
+    height: 500px;
+    width: 100%;
+}
+
+.about-link a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #898989;
+}
+
+/*============================
+		About US CSS
+==============================*/
+
+.about-us-sec {
+    background: url(assets/images/about-us-bg.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 125px 0;
+}
+
+.about-us-sec h5 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+}
+
+.about-text {
+    margin-bottom: 115px;
+}
+
+.about-us-sec h2 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 26px;
+    line-height: 1.5;
+    margin-bottom: 45px;
+    margin-top: 0;
+}
+
+.about-us-sec p {
+    color: #898989;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+/*============================
+		Team Member CSS
+==============================*/
+
+.team-member-sec {
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+
+.team-member-sec .title {
+    margin-bottom: 80px;
+}
+
+.team-member-sec .title h2 {
+    font-size: 50px;
+    color: #000000;
+    font-weight: 300;
+}
+
+.team-member-sec .title p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #000000;
+}
+
+.team-member {
+    margin-bottom: 100px;
+}
+
+.team-member-image img {
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.team-member a {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.team-member p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+    color: #b5b5b5;
+}
+
+.all-member a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background: #000;
+    color: #fff;
+    padding: 10px 25px;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.career-sec {
+    background: url(assets/images/career-img.png) no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+}
+
+.balb-sec {
+    background: url(assets/images/balb-image.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 400px;
+}
+
+/*============================
+		Creative CSS
+==============================*/
+
+.creative-sec {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.creative-text {
+    padding-left: 50px;
+}
+
+.creative-text h3 {
+    font-size: 35px;
+    color: #000;
+    margin-top: 125px;
+    line-height: 1.4;
+}
+
+.creative-text a {
+    background: #000;
+    color: #fff;
+    padding: 10px 25px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+/*============================
+		Main Service CSS
+==============================*/
+.main-service-sec {
+    padding-bottom: 100px;
+    margin-top: -50px;
+}
+
+.main-service-sec .nav-item a {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    border: none;
+    padding: 20px;
+    background: #fff;
+    border-radius: 0;
+}
+
+.main-service-sec .nav-item a.active {
+    background: #f8f8f8;
+}
+
+.main-service-sec .nav-tabs {
+    border: none;
+    background: #fff;
+    box-shadow: 0 5px 5px gray;
+}
+
+.main-service-sec .nav-item img {
+    margin-right: 15px;
+    height: 70px;
+}
+
+.main-service-sec h2 {
+    font-size: 32px;
+    display: inline-block;
+    position: relative;
+}
+
+.main-service-sec h2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    background: url(assets/images/cr-border.png) no-repeat;
+    background-size: 100% 100%;
+    height: 30px;
+    width: 100%;
+    z-index: 999;
+
+}
+
+.main-service-sec p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.main-service-sec .tab-pane {
+    margin-top: 80px;
+}
+
+.main-service-sec li {
+    font-size: 16px;
+    line-height: 2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-service-sec li i {
+    width: 20px;
+    height: 20px;
+    background: #15b388;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.view {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 60px;
+    display: inline-block;
+}
+
+/*============================
+		Portfolio CSS
+==============================*/
+.portfolio-sec {
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.full-title {
+    background: url(assets/images/dot-bg.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 475px;
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+.portfolio-tab {
+    background: #fff;
+    box-shadow: 5px 0 10px #b4b3b3;
+    padding: 30px 50px;
+    width: 400px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+
+.portfolio-tab.fixed-tab {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    transition: .5s;
+}
+
+.portfolio-tab li {
+    font-size: 20px;
+    padding: 25px 0;
+}
+
+.portfolio-tab li:hover {
+    cursor: pointer;
+}
+
+li.mixitup-control-active {
+    font-weight: 700;
+}
+
+.full-title h2 {
+    font-size: 40px;
+    font-weight: 400;
+    background: #fff;
+    padding: 80px 150px;
+}
+
+.single-portfolio {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.single-portfolio-image img {
+    height: 600px;
+    width: 100%;
+}
+
+.single-portfolio-image {
+    position: relative;
+}
+
+.single-portfolio-text {
+    position: absolute;
+    left: 75px;
+    bottom: 100px;
+    background: #fff;
+    padding: 20px;
+}
+
+.single-portfolio-text a {
+    font-size: 22px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.single-portfolio-text p {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 14px;
+    color: #626f7b;
+}
+
+.single-portfolio-text i {
+    padding-left: 125px;
+}
+
+/*============================
+    Portfolio Details CSS
+==============================*/
+
+.portfolio-slider {
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+
+.portfolio-slider button.owl-prev {
+    position: absolute;
+    left: -100px;
+    top: 45%;
+}
+
+.portfolio-slider button.owl-next {
+    position: absolute;
+    right: -100px;
+    top: 45%;
+}
+
+.portfolio-slider .owl-nav img {
+    width: 60%;
+}
+
+.portfolio-main-text h2 {
+    font-size: 26px;
+}
+
+.portfolio-main-text {
+    margin-bottom: 50px;
+}
+
+.portfolio-main-text p {
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.portfolio-main-text span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.portfolio-main-text span i {
+    margin-right: 5px;
+}
+
+.portfolio-table {
+    position: relative;
+    margin-top: 50px;
+    padding-left: 40px;
+    margin-left: 20px;
+    width: 100%;
+    display: block;
+}
+
+.portfolio-table:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #868686;
+}
+
+.portfolio-table tr {
+    line-height: 2;
+}
+
+.portfolio-table td:first-child {
+    color: #868686;
+    font-size: 14px;
+    width: 40%;
+}
+
+.portfolio-table td:last-child {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+a.back {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    padding: 15px 25px;
+    background: #000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+a.back i {
+    margin-right: 15px;
+}
+
+.portfolio-setails-sec span hr {
+    border-top: 1px solid #000;
+}
+
+/*============================
+		Meet CSS
+==============================*/
+
+.meet-full-title {
+    background: url(assets/images/dot-bg.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 475px;
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+.meet-full-title .text {
+    background: #fff;
+    padding: 50px;
+}
+
+.meet-full-title .text h2 {
+    font-size: 36px;
+}
+
+.meet-full-title .text p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 60px;
+}
+
+.meet-full-title .text a {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    border-bottom: 2px solid #000;
+}
+
+.meet-text {
+    padding: 100px 0;
+    padding-bottom: 50px;
+}
+
+.meet-text h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.meet-text p {
+    margin-bottom: 50px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+/*============================
+		Meet Slider CSS
+==============================*/
+
+.meet-image img {
+    height: 450px;
+}
+
+/*============================
+		Job CSS
+==============================*/
+
+.job-area-sec {
+    padding: 115px 0;
+}
+
+.job-area-sec .title h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 75px;
+}
+
+.single-job {
+    background: #f4f5f8;
+    padding: 45px;
+    margin-bottom: 30px;
+    transition: .5s;
+
+}
+
+.single-job:hover {
+    background: url(assets/images/single-job-bg.png) no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    transition: .5s;
+}
+
+.single-job:hover p {
+    color: #fff;
+}
+
+.single-job:hover p span {
+    color: #fff;
+}
+
+.single-job h3 {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.single-job p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #656464;
+}
+
+.single-job p span {
+    color: #000;
+    margin-top: 55px;
+    display: inline-block;
+}
+
+/*============================
+		Map CSS
+==============================*/
+
+.map-area {
+    border: 1px solid #fff;
+    margin-top: 75px;
+}
+
+.map-area iframe {
+    height: 400px;
+    width: 100%;
+}
+
+/*============================
+		Contact CSS
+==============================*/
+
+.contact-sec {
+    padding: 125px 0;
+    background: url(assets/images/contact-bg.png) no-repeat;
+    background-position: left center;
+}
+
+.contact-text {
+    margin-top: 115px;
+}
+
+.contact-text h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.contact-text p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    margin-bottom: 65px;
+}
+
+.contact-text h4 {
+    font-size: 22px;
+}
+
+.contact-text ul {
+    margin-top: 35px;
+}
+
+.contact-text li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    line-height: 2;
+}
+
+.contact-text a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+.contact-form {
+    background: #fff;
+    box-shadow: 0 5px 15px #b4b3b3;
+    padding: 45px 60px;
+}
+
+.contact-form h3 {
+    font-size: 22px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #707070;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.contact-form input {
+    border-radius: 0;
+    background: #f5f6f8;
+    height: 45px;
+}
+
+.contact-form textarea {
+    border-radius: 0;
+    background: #f5f6f8;
+}
+
+.contact-form button {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border-radius: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    height: 50px;
+}
+
+/* Single Blog Banner Area */
+
+.blog-single-area {
+    background: url(assets/images/blog-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 30%;
+    height: 430px;
+    margin-top: 75px;
+}
+
+/*******Blog Details Page*******/
+/*
+-------------------------------------
+16. Sily Area
+-------------------------------------
+*/
+.sily-area .silly-pad {
+    padding: 0 40px 0 0;
+}
+
+.sily-area p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #676a6a;
+}
+
+.sily-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sily-text h2 {
+    font-size: 48px;
+}
+
+.silly-pad p {
+    line-height: 30px;
+}
+
+.blog-user p {
+    font-size: 14px;
+    color: #6d7070;
+}
+
+.blog-user span {
+    color: #d1d3d3;
+}
+
+.catg-item p {
+    font-size: 14px;
+}
+
+.catg-item span {
+    font-size: 14px;
+}
+
+.blog-comment {
+    margin-top: 40px;
+}
+
+.blog-user {
+    margin: 15px 0 0 15px;
+}
+
+.blog-user span {
+    font-style: italic;
+}
+
+.blog-p-text {
+    position: relative;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.blog-p-text span {
+    font-size: 90px;
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 27px;
+    color: #272b2b;
+}
+
+.amet-text {
+    padding-top: 20px;
+}
+
+.blog-text-left {
+    margin-left: 90px;
+}
+
+.neque {
+    display: inline-flex;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.neque-img img {
+    position: relative;
+
+}
+
+
+
+
+
+
+/*
+-------------------------------------
+17. Category Area
+-------------------------------------
+*/
+.sily-area .silly-pad-2 {
+    padding: 0 0 0 40px;
+}
+
+.catg-search .form-control {
+    font-size: 14px;
+    font-weight: 400;
+    height: 40px;
+    padding: 6px 115px 6px 12px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+
+    background: #eeeff0;
+    border: 1px solid #eeeff0;
+
+
+}
+
+.catg-search .fa {
+    position: absolute;
+    top: 13px;
+    right: 17px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.neque-img img {
+    position: relative;
+    max-width: fit-content;
+}
+
+.neque-im-text p {
+    font-style: italic;
+    font-size: 14px;
+    color: #babdbe;
+}
+
+.sed-ut {
+    margin-top: 30px;
+}
+
+.de-br-ar ul li {
+    list-style: none;
+    float: left;
+    margin: 5px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.train-text-area h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.train-text-area h4 {
+    color: #c7c9ca;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+.neque-im-text {
+    box-shadow: 0 0 10px 0 #ddd;
+    padding: 15px 0 1px 15px;
+}
+
+.neque-text {
+    margin-left: 20px;
+}
+
+.catagories {
+    padding-top: 60px;
+}
+
+.catagories h5 {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #5c5f5f;
+}
+
+.catagories h5:after {
+    position: absolute;
+    content: "";
+    background: #ec008c;
+    height: 2px;
+    width: 40px;
+    top: 35px;
+    left: 0;
+}
+
+.social-media img {
+    width: 95%;
+}
+
+.post-area {
+    padding-top: 30px;
+}
+
+.po-head h5 {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    color: #5c5f5f;
+
+}
+
+.insta-head h5 {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    color: #5c5f5f;
+
+}
+
+.po-head h5:after {
+    position: absolute;
+    content: "";
+    background: #ec008c;
+    height: 2px;
+    width: 40px;
+    top: 35px;
+    left: 0;
+}
+
+.post-item {
+    display: inline-flex;
+    padding-top: 30px;
+}
+
+.catagories hr {
+    margin-top: 0;
+}
+
+.catg-item span {
+    font-family: 'Poppins', sans-serif;
+}
+
+.post-text h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.post-text {
+    margin-left: 20px;
+}
+
+.tweet-text h6 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.tweet-text {
+    margin-left: 10px;
+}
+
+.tweet-text small {
+    font-family: 'Poppins', sans-serif;
+}
+
+.tweet-text p {
+    font-family: 'Poppins', sans-serif;
+    color: #5d6060;
+    font-size: 14px;
+}
+
+.tweet-text span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #828484;
+}
+
+.follow-btn {
+    margin-top: 15px;
+}
+
+.follow-btn .btn {
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #DDD;
+    display: block;
+    border-radius: 0;
+    font-weight: 700;
+    color: #000;
+    padding: 15px;
+}
+
+.instagram-item {
+    margin-top: 70px;
+}
+
+.insta-second-item {
+    margin-top: 30px;
+}
+
+.insta-head {
+    margin-bottom: 30px;
+}
+
+.comment-label {
+    margin-left: 15px;
+}
+
+.blog-text-area {
+    margin-top: 30px;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: #8d8f8f;
+    margin: 5px 10px 0 10px;
+}
+
+.blog-text-area .form-control {
+    height: 100px;
+    border-radius: 0;
+    margin-left: 60px;
+    width: 92%;
+}
+
+.comment-time span {
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: #8d8f8f;
+}
+
+.post-btn .btn {
+    border: 1px solid #DDD;
+    border-radius: 0;
+    font-weight: 700;
+    color: #000;
+    padding: 6px 40px;
+    margin-top: 15px;
+}
+
+.comment-content {
+    margin-left: 60px;
+}
+
+.re-sh-item {
+    margin: 0 10px;
+}
+
+.blog-com-area-last {
+    margin-left: 50px;
+}
+
+.master-border {
+    width: 100px;
+    height: 2px;
+    background: #f1f2f2;
+    display: inline-block;
+}
+
+.train-text-area {
+    margin-top: 45px;
+}
+
+.de-br-ar {
+    padding: 30px 0 30px 0;
+}
+
+.de-br-ar a {
+    color: #b5b8b9;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.blog-form hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.comment.area h6 {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.comment-label label {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.blog-form p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.re-sh-item a {
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #8d8f8f;
+}
+
+/*============================
+		Footer CSS
+==============================*/
+
+.footer-sec {
+    background: url(assets/images/footer-bg.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding-top: 75px;
+    color: #fff;
+}
+
+.footer-sec h3 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.footer-sec li {
+    padding: 10px;
+    transition: .5s;
+}
+
+.footer-sec a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.footer-single i {
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    text-align: center;
+    color: #474747;
+    margin-right: 5px;
+}
+
+.second-footer-part li a {
+    transform: scale(0);
+}
+
+.second-footer-part li:hover i {
+    color: #fff;
+}
+
+.second-footer-part li:hover a {
+    transform: scale(1.2);
+}
+
+.third-footer-part li {
+    transition: .5s;
+}
+
+.third-footer-part li:hover a {
+    padding-left: 7px;
+    transition: .5s;
+}
+
+.third-footer-part li:hover i {
+    color: #fff;
+}
+
+.footer-line {
+    background: #474747;
+    height: 1px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.footer-link li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-link a {
+    font-size: 14px;
+    color: #a6a6a6;
+}
+
+.footer-bottom {
+    padding-bottom: 25px;
+}
+
+.footer-bottom i {
+    margin-right: 3px;
+}
+
+.copy-right p {
+    color: #a6a6a6;
+}
+
+/* Right Side Nav*/
+#pp-nav.right {
+    background-color: #000;
+    border-radius: 5px;
+
+}
+
+#pp-nav ul,
+.pp-slidesNav ul {
+    padding: 3px;
+}
+
+#pp-nav span,
+.pp-slidesNav span {
+    height: 12px;
+    width: 12px;
+    border: 2px solid #fff !important;
+    left: 1px;
+}
+
+#pp-nav li .active span,
+.pp-slidesNav .active span {
+    background: #fff;
+}

@@ -1,0 +1,1236 @@
+/* Responsive */
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+      header.header-sec form .nav-item {
+        display: none;
+    }
+
+    .banner-social {
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    header.header-sec form .nav-item {
+        display: none;
+    }
+
+    .banner-social {
+        display: none;
+    }
+
+    .brand-sec .container-fluid {
+        padding-left: 50px;
+    }
+
+    .brand-title h2 {
+        font-size: 26px;
+    }
+
+    .hiring-btn a {
+        font-size: 16px;
+    }
+
+    .hiring-btn span {
+        font-size: 13px;
+    }
+
+
+    .brand-image img {
+        height: 400px;
+    }
+
+    .brand-slider .owl-nav {
+        left: -27%;
+    }
+
+    .team-banner-text h2 {
+        font-size: 40px;
+    }
+
+    .main-service-sec .nav-item img {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .main-service-sec .nav-item a {
+        font-size: 17px;
+    }
+
+    .full-title h2 {
+        font-size: 36px;
+        padding: 75px 125px;
+
+    }
+
+    .portfolio-tab {
+        width: 350px;
+    }
+
+    .single-portfolio-image img {
+        height: 450px;
+    }
+
+    .single-portfolio-text {
+        width: 90%;
+        left: 5%;
+        bottom: 25px;
+    }
+
+    .single-portfolio-text i {
+        padding-left: 25px;
+    }
+
+    .meet-image img {
+        height: 350px;
+    }
+
+    .portfolio-slider button.owl-next {
+        right: -50px;
+    }
+
+    .portfolio-slider button.owl-prev {
+        left: -50px;
+    }
+
+    .neque-img {
+        width: 65%;
+    }
+
+    .neque-text {
+        width: 35%;
+    }
+
+    .neque-img img {
+        width: 100%;
+    }
+
+    .neque-im-text {
+        padding: 15px 15px 1px 10px;
+    }
+
+    .tweet-text p {
+        font-size: 12px;
+    }
+
+    .post-text h6 {
+        font-size: 14px;
+    }
+
+    .sily-area p {
+        font-size: 13px;
+    }
+
+    .insta-second-item {
+        margin-top: 5px;
+    }
+    .service-slider .owl-nav {
+        bottom: -180px;
+    }
+
+}
+
+/* Medium Devices, Tablet, Mobile */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    button.navbar-toggler {
+        margin-right: 25px;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
+        line-height: 60px;
+    }
+
+    div#navbarSupportedContent {
+        background: #fff;
+    }
+
+    .nav-right-side li {
+        border-left: 0;
+        border-right: 1px solid #c8c8c8;
+    }
+
+    .banner-sec {
+        padding: 100px 0;
+    }
+
+    .banner-social {
+        display: none
+    }
+
+    .banner-text h1 {
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    #text {
+        font-size: 30px;
+    }
+
+    .banner-text h3 {
+        top: 250px;
+        font-size: 18px;
+    }
+
+    .service-sec {
+        padding: 100px 0;
+    }
+
+    .service-sec .title h2 {
+        font-size: 34px;
+        margin-bottom: 75px;
+    }
+
+    .all-services a {
+        margin-top: 75px;
+    }
+
+    .brand-sec .container-fluid {
+        padding-left: 15px;
+    }
+
+    .brand-title h2 {
+        font-size: 26px;
+        margin-bottom: 50px;
+    }
+
+    .hiring-btn a {
+        font-size: 16px;
+    }
+
+    .hiring-btn a span {
+        font-size: 13px;
+    }
+
+    .brand-slider .owl-nav {
+        left: -116%;
+        bottom: 22%;
+    }
+
+    .brand-image img {
+        height: 400px;
+    }
+
+    .brand-sec,
+    .review-sec {
+        padding: 0;
+    }
+
+    .review-title h2 {
+        font-size: 34px;
+    }
+
+    .contact-btn a {
+        font-size: 16px;
+    }
+
+    .review-image {
+        width: 40% !important;
+    }
+
+    .review-text {
+        width: 60%;
+    }
+
+    .review-text h3 {
+        font-size: 22px;
+        padding: 50px 25px;
+        margin-top: 50px;
+    }
+
+    .review-image img {
+        height: 400px;
+    }
+
+    .team-title h2 {
+        font-size: 32px;
+    }
+
+    a.card-title {
+        font-size: 32px;
+    }
+
+    .accrodion-part li p {
+        margin-bottom: 25px;
+    }
+
+    .apply-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .more-btn {
+        font-size: 16px;
+    }
+
+    .footer-sec li {
+        line-height: 1.5;
+    }
+
+    .creative-text h3 {
+        font-size: 28px;
+        margin-top: 25px;
+    }
+
+    .career-sec {
+        height: 350px;
+    }
+
+    .team-member-sec {
+        padding: 75px;
+    }
+
+    .team-member a {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .team-banner-text h2 {
+        font-size: 36px;
+        padding-right: 0;
+    }
+
+    .team-banner-text p {
+        padding-right: 0;
+    }
+
+    .team-banner-image img {
+        height: 400px;
+    }
+
+    .main-service-sec .nav-item img {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .main-service-sec .nav-item a {
+        font-size: 17px;
+    }
+
+    .balb-sec {
+        height: 350px;
+    }
+
+    .full-title h2 {
+        font-size: 36px;
+        padding: 50px 75px;
+    }
+
+    .portfolio-tab {
+        width: 250px;
+    }
+
+    .portfolio-tab li {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+
+    .single-portfolio-image img {
+        height: 375px;
+    }
+
+    .single-portfolio-text {
+        left: 5%;
+        bottom: 25px;
+        padding: 15px;
+        width: 90%;
+    }
+
+    .meet-full-title .text {
+        padding: 25px 50px;
+    }
+
+    .meet-slider .owl-nav {
+        display: none;
+    }
+
+    .meet-image img {
+        height: 400px;
+    }
+
+    .single-job {
+        padding: 20px;
+    }
+
+    .contact-text h2 {
+        font-size: 32px
+    }
+
+    .contact-form {
+        padding: 40px 20px;
+    }
+
+    .contact-form h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .full-title {
+        height: 300px;
+    }
+
+    .portfolio-slider button.owl-prev {
+        left: -50px;
+    }
+
+    .portfolio-slider button.owl-next {
+        right: -50px;
+    }
+
+    .portfolio-table {
+        padding-left: 20px;
+        margin-left: 0;
+        margin-top: 75px;
+    }
+
+    .team-sec {
+        padding: 0;
+    }
+
+    .card-header {
+        padding: 5px 0;
+    }
+
+    .card-header h2 button {
+        font-size: 22px;
+    }
+
+    .accrodion-part li p {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .card-body a {
+        margin-bottom: 0;
+    }
+
+    .review-item {
+        height: 325px;
+    }
+
+    .review-image img {
+        height: 325px;
+    }
+
+    .review-title h2 {
+        margin-bottom: 40px;
+    }
+
+    .neque-img {
+        width: 65%;
+    }
+
+    .neque-text {
+        width: 35%;
+    }
+
+    .neque-img img {
+        width: 100%;
+    }
+
+    .neque-im-text {
+        padding: 15px 15px 1px 10px;
+    }
+
+    .tweet-text p {
+        font-size: 12px;
+    }
+
+    .post-text h6 {
+        font-size: 14px;
+    }
+
+    .sily-area p {
+        font-size: 13px;
+    }
+
+    .insta-second-item {
+        margin-top: 15px;
+    }
+
+    .sily-area .silly-pad {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .sily-area .silly-pad-2 {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .post-item {
+        padding-right: 30px;
+    }
+
+    .instagram-item .justify-content-between {
+        justify-content: flex-start !important;
+    }
+
+    .insta-img {
+        margin-right: 15px;
+    }
+
+    .blog-text-left {
+        margin-left: 70px;
+    }
+    .service-slider .owl-nav {
+        bottom: -115px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #pp-nav.right {
+        display: none;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
+        height: 55px;
+        line-height: 1;
+    }
+
+    .header-sec .navbar-light .navbar-brand {
+        margin-left: 15px;
+        margin-right: 0;
+    }
+
+    button.navbar-toggler {
+        margin-right: 15px;
+    }
+
+    div#navbarSupportedContent {
+        background: #fff;
+        border-top: 1px solid #999;
+        border-bottom: 1px solid #999;
+        margin-top: 5px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
+
+    div#navbarSupportedContent li {
+        padding: 10px 0;
+    }
+
+    form.form-inline.my-2.my-lg-0 {
+        display: none;
+    }
+
+    .section {
+        margin-top: 55px !important;
+    }
+
+    .banner-sec,
+    .brand-sec,
+    .review-sec {
+        padding: 25px 0;
+    }
+
+    .banner-text h1 {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 0;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+    }
+
+    .brand-sec .container-fluid {
+        padding-left: 0;
+    }
+
+    #text {
+        font-size: 20px;
+        height: 50px;
+        line-height: 30px;
+        padding: 12px;
+        padding-right: 65px;
+    }
+
+    .underscore {
+        font-size: 25px;
+        top: -3px;
+    }
+
+    .banner-text h3 {
+        font-size: 15px;
+        top: 75px;
+    }
+
+    .banner-social {
+        display: none;
+    }
+
+    .banner-text {
+        height: 170px;
+    }
+
+    .banner-image img {
+        height: 300px;
+        text-align: center;
+        margin: 0 auto;
+        display: table;
+        margin-bottom: 75px;
+    }
+
+    .service-sec {
+        padding: 100px 0;
+    }
+
+    .service-sec .title h2 {
+        font-size: 28px;
+        margin-bottom: 50px;
+        font-weight: 300;
+    }
+
+    .service-item {
+        text-align: center;
+    }
+
+    .service-text {
+        margin-top: -55px !important;
+    }
+
+    .all-services a {
+        margin-top: 25px;
+    }
+
+    .brand-title h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .service-text p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .dots-icon {
+        display: none;
+    }
+
+    .hiring-btn {
+        margin: 0 auto;
+        margin-bottom: 25px;
+        display: table;
+    }
+
+    .brand-image img {
+        height: 300px;
+        width: 200px !important;
+    }
+
+    .brand-item {
+        text-align: center;
+        margin: 0 auto;
+        display: table;
+        margin-top: 20px;
+    }
+
+    .brand-slider .owl-nav {
+        left: 0;
+        top: 0;
+        display: none;
+    }
+
+    .brand-slider .owl-nav img {
+        width: 30px;
+        margin: 0;
+        display: none;
+    }
+
+    .hiring-btn a {
+        font-size: 14px;
+    }
+
+    .hiring-btn span {
+        font-size: 12px;
+    }
+
+    .review-title h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .review-text h3 {
+        padding: 0;
+        font-size: 17px;
+        font-weight: 300;
+    }
+
+    .review-item {
+        box-shadow: none;
+    }
+
+    .review-image img {
+        height: 250px;
+        width: 200px !important;
+        display: table !important;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .review-image {
+        width: 100% !important;
+    }
+
+    .review-text {
+        width: 100%;
+        background: #fff;
+    }
+
+    .review-slider .owl-nav img {
+        width: 40px;
+    }
+
+    .review-slider button.owl-prev {
+        left: -20px;
+        top: 35%;
+    }
+
+    .review-slider button.owl-next {
+        right: -20px;
+        top: 35%;
+    }
+
+    .review-text h5 {
+        font-size: 13px;
+    }
+
+    .contact-btn a {
+        float: none;
+        display: table;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .team-banner img {
+        height: 350px;
+    }
+
+    .team-banner {
+        margin-bottom: 50px;
+    }
+
+    .team-title h2 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    a.card-title {
+        font-size: 20px;
+    }
+
+    .accrodion-part li p {
+        color: #000;
+        font-size: 14px;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+
+    .apply-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    .more-btn {
+        font-size: 14px;
+    }
+
+    footer.footer-sec .text-right {
+        text-align: center !important;
+    }
+
+    .footer-sec a {
+        font-size: 13px;
+    }
+
+    .copy-right p {
+        text-align: center;
+    }
+
+    .footer-sec h3 {
+        font-size: 20px;
+        margin: 25px 10px;
+    }
+
+    .footer-sec li {
+        padding: 7px;
+    }
+
+    .team-banner-text {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+    .team-banner-text h2 {
+        font-size: 28px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .team-banner-text p {
+        padding-right: 0;
+        font-size: 17px;
+        margin-top: 30px;
+    }
+
+    .team-banner-image img {
+        height: 350px;
+        width: 100%;
+    }
+
+    .about-us-sec {
+        padding: 75px 0;
+    }
+
+    .about-us-sec h5 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .about-us-sec h2 {
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+
+    .about-text {
+        margin-bottom: 75px;
+    }
+
+    .team-member-sec .title h2 {
+        font-size: 36px;
+    }
+
+    .team-member-sec .title p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .team-member-sec,
+    .creative-sec {
+        padding: 75px 0;
+    }
+
+    .team-member-image img {
+        margin-bottom: 35px;
+    }
+
+    .team-member {
+        margin-bottom: 75px;
+    }
+
+    .career-sec {
+        height: 300px;
+    }
+
+    .creative-text {
+        padding-left: 0;
+    }
+
+    .creative-text h3 {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .creative-text h3 {
+        font-size: 28px;
+    }
+
+    .creative-text a {
+        display: table;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .main-service-sec li {
+        width: 100%;
+    }
+
+    .main-service-sec .nav-item img {
+        height: 50px;
+    }
+
+    .main-service-sec .nav-item a {
+        text-align: left;
+    }
+
+    .main-service-sec .tab-pane {
+        margin-top: 45px;
+    }
+
+    .main-service-sec p {
+        margin-top: 60px;
+    }
+
+    .balb-sec {
+        height: 300px;
+    }
+
+    .full-title h2 {
+        font-size: 28px;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .full-title {
+        height: 225px;
+    }
+
+    .portfolio-tab {
+        position: relative;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    .portfolio-tab li {
+        padding: 15px;
+    }
+
+    .single-portfolio-image img {
+        height: 375px;
+    }
+
+    .portfolio-tab.fixed-tab {
+        position: relative;
+    }
+
+    .single-portfolio-text {
+        width: 80%;
+        left: 10%;
+        bottom: 50px;
+    }
+
+    .single-portfolio-text a {
+        font-size: 18px;
+    }
+
+    .single-portfolio-text i {
+        padding-left: 50px;
+    }
+
+    .meet-full-title .text {
+        padding: 25px;
+    }
+
+    .meet-full-title .text h2 {
+        font-size: 28px;
+    }
+
+    .meet-full-title .text p {
+        margin-bottom: 30px;
+    }
+
+    .meet-full-title {
+        height: 350px;
+    }
+
+    .meet-text {
+        padding: 50px 0;
+    }
+
+    .meet-text h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .meet-image img {
+        height: 350px;
+    }
+
+    .meet-slider .owl-nav {
+        display: none;
+    }
+
+    .job-area-sec {
+        padding: 75px 0;
+    }
+
+    .job-area-sec .title h2 {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .map-area iframe {
+        height: 350px;
+    }
+
+    .contact-sec {
+        padding: 75px 0;
+    }
+
+    .contact-text {
+        margin-top: 0;
+    }
+
+    .contact-text h2 {
+        font-size: 26px;
+    }
+
+    .contact-text p {
+        font-size: 16px;
+    }
+
+    .contact-form {
+        margin-top: 35px;
+        padding: 15px;
+    }
+
+    .contact-form h3 {
+        font-size: 18px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .contact-form input {
+        height: 40px;
+    }
+
+    .portfolio-slider {
+        margin-bottom: 20px;
+    }
+
+    .portfolio-table:before {
+        display: none;
+    }
+
+    .portfolio-table {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .all-services {
+        text-align: center;
+    }
+
+    .pp-tableCell {
+        display: inherit;
+        vertical-align: inherit;
+        width: initial;
+    }
+
+    .pp-section.pp-table {
+        display: initial;
+    }
+
+    .service-sec {
+        padding: 0;
+        padding-top: 25px;
+    }
+
+    .service-sec .title h2 {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
+
+    .service-text h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        line-height: 1.2;
+        margin-top: 10px;
+    }
+
+    .team-sec {
+        padding: 0;
+    }
+
+    .team-title {
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .team-title h2 {
+        line-height: 1.2;
+        font-size: 24px;
+    }
+
+    .card-header h2 button {
+        font-size: 20px;
+    }
+
+    .card-header {
+        padding: 0;
+    }
+
+    .accrodion-part li p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .footer-sec {
+        padding-top: 25px;
+    }
+
+    .footer-sec h3 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .footer-sec li {
+        padding: 2px;
+    }
+
+    .footer-sec a {
+        font-size: 11px;
+    }
+
+    .footer-line {
+        margin: 20px 0;
+    }
+
+    .neque {
+        display: inherit;
+    }
+
+    .neque-text {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .neque-img img {
+        width: 100%;
+    }
+
+    .neque-im-text {
+        padding: 15px 15px 1px 10px;
+    }
+
+    .tweet-text p {
+        font-size: 12px;
+    }
+
+    .post-text h6 {
+        font-size: 14px;
+    }
+
+    .sily-area p {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .sily-text h2 {
+        font-size: 35px;
+    }
+
+    .insta-second-item {
+        margin-top: 15px;
+    }
+
+    .sily-area .silly-pad {
+        padding: 0px 15px 0px 15px;
+    }
+
+    .sily-area .silly-pad-2 {
+        padding: 0px 15px 0px 15px;
+    }
+
+    .post-item {
+        padding-right: 30px;
+    }
+
+    .instagram-item .justify-content-between {
+        justify-content: flex-start !important;
+    }
+
+    .insta-img {
+        margin-right: 15px;
+    }
+
+    .blog-text-left {
+        margin-left: 70px;
+    }
+
+    .blog-text-area .form-control {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .tr-br {
+        display: none;
+    }
+
+    .neque-im-text h6 {
+        line-height: 1.3;
+    }
+    .service-slider .owl-nav {
+        display: none !important;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+
+    .banner-text {
+        height: 200px;
+    }
+
+    .banner-text h3 {
+        top: 100px;
+    }
+
+    .team-title h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .team-sec {
+        background: #fff;
+    }
+
+    .card-header h2 button {
+        font-size: 17px;
+    }
+
+    .hiring-btn {
+        padding: 10px 20px;
+        margin-bottom: 10px;
+    }
+
+    .comment-content {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .blog-com-area-last {
+        margin-left: 0px;
+    }
+
+    .blog-text-area .form-control {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .instagram-item .justify-content-between {
+        justify-content: space-between !important;
+    }
+
+    .insta-img {
+        margin-right: 0px;
+    }
+
+    .comment-time span {
+        font-size: 11px;
+    }
+
+    .comment-label label {
+        font-size: 12px;
+    }
+
+    .train-text-area h2 {
+        font-size: 30px;
+
+    }
+
+    .sily-text h2 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 319px) {}
