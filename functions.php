@@ -63,28 +63,60 @@ if (function_exists('add_theme_support'))
 \*------------------------------------*/
 
 // HTML5 Blank navigation
-function html5blank_nav()
+function backspace_nav()
 {
-	wp_nav_menu(
-	array(
-		'theme_location'  => 'header-menu',
-		'menu'            => '',
-		'container'       => 'div',
-		'container_class' => 'menu-{menu slug}-container',
-		'container_id'    => '',
-		'menu_class'      => 'menu',
-		'menu_id'         => '',
-		'echo'            => true,
-		'fallback_cb'     => 'wp_page_menu',
-		'before'          => '',
-		'after'           => '',
-		'link_before'     => '',
-		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
-		'depth'           => 0,
-		'walker'          => ''
-		)
-	);
+    $menu = wp_nav_menu(
+        array(
+            'theme_location'  => 'header_top_menu',
+            'menu'            => '',
+            'container'       => 'div',
+            'container_class' => 'collapse navbar-collapse',
+            'container_id'    => 'navbarSupportedContent',
+            'menu_class'      => 'Main menu navbar-nav mr-auto',
+            'menu_id'         => 'false',
+            'echo'            => false,
+            'fallback_cb'     => 'wp_page_menu',
+            'before'          => '',
+            'after'           => '',
+            'link_before'     => '',
+            'link_after'      => '',
+            'items_wrap'      => '<div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav mr-auto">%3$s</ul></div>',
+            'depth'           => 0,
+            'walker'          => ''
+        )
+    );
+
+    $menu = str_replace('menu-item', 'nav-item menu-item',$menu);
+    $menu = str_replace('current_page_item', 'current_page_item active',$menu);
+    $menu = str_replace('<a', '<a class="nav-link"',$menu);
+
+    echo $menu;
+}
+
+function footer_first()
+{
+    $menu = wp_nav_menu(
+        array(
+            'theme_location'  => 'footer_menu',
+            'menu'            => '',
+            'container'       => 'div',
+            'container_class' => 'false',
+            'container_id'    => 'false',
+            'menu_class'      => 'false',
+            'menu_id'         => 'false',
+            'echo'            => false,
+            'fallback_cb'     => 'wp_page_menu',
+            'before'          => '',
+            'after'           => '',
+            'link_before'     => '',
+            'link_after'      => '',
+            'items_wrap'      => '<ul class="navbar-nav mr-auto">%3$s</ul>',
+            'depth'           => 0,
+            'walker'          => ''
+        )
+    );
+
+    echo $menu;
 }
 
 // Load HTML5 Blank scripts (header.php)

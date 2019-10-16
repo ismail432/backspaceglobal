@@ -15,14 +15,16 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6">
                     <div class="footer-single second-footer-part">
-                        <h3>Navigation</h3>
-                        <ul>
+                        <h3><?php the_title(); ?></h3>
+                       <!-- <ul>
                             <li><i class="fas fa-bullseye"></i><a href="#"> About Company</a></li>
                             <li><i class="fas fa-bullseye"></i><a href="#"> Services</a></li>
                             <li><i class="fas fa-bullseye"></i><a href="#"> Our Works</a></li>
                             <li><i class="fas fa-bullseye"></i><a href="#"> Career</a></li>
                             <li><i class="fas fa-bullseye"></i><a href="#"> Contact</a></li>
-                        </ul>
+                        </ul>-->
+
+                        <?php footer_first(); ?>
                     </div>
                 </div>
                 <div class="col-md-5 col-lg-4">

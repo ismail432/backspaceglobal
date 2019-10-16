@@ -32,27 +32,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <!--          <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Home </a></li>
-                            <li class="nav-item "><a class="nav-link" href="about.html">About </a></li>
-                            <li class="nav-item "><a class="nav-link" href="portfolio.html">Portfolio </a></li>
-                            <li class="nav-item "><a class="nav-link" href="service.html">Service </a></li>
-                            <li class="nav-item "><a class="nav-link" href="career.html">Career </a></li>
-                            <li class="nav-item "><a class="nav-link" href="blog.html">Blog </a></li>
-                            <li class="nav-item "><a class="nav-link" href="contact.html">Contact </a></li>
-                        </ul>
--->
-
-                        <?php
-                        wp_nav_menu(
-                            array(
-
-                                'theme_location'  => 'header_top_menu',
-                                'items_wrap'      => '<ul class="navbar-nav mr-auto">%3$s</ul>'
-                            )
-                        );
-                        ?>
+                        <?php backspace_nav(); ?>
 
                         <form class="form-inline my-2 my-lg-0">
                             <ul class="navbar nav-right-side mr-auto">
@@ -61,7 +41,7 @@
                                 <li class="search"><a href="#"><i class="fas fa-search"></i></a></li>
                             </ul>
                         </form>
-                    </div>
+
                 </nav>
             </header>
             <!--Header Area End-->
