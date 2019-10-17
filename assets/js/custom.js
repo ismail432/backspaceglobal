@@ -11,6 +11,11 @@
     "use strict";
 
 
+  $(document).ready(function() {
+            $('#pagepiling').pagepiling();
+        });
+
+
     /*========================
             Brand Slider
         ==========================*/
