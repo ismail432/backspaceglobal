@@ -1,62 +1,50 @@
 <div class="catg-search">
-    <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search">
-        <div class="input-group-append">
-            <i class="fa fa-search"></i>
-        </div>
-    </div>
+
+    <form action="<?php echo home_url( '/' ); ?>" method="get">
+        <input class="search-field" placeholder="Search" value="" type="search" name="s">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
 </div>
+
 <div class="catagories">
-    <div class="cat-header">
-        <h5>Categories</h5>
-    </div>
     <div class="catg-item d-flex">
-        <p>Creative</p>
-        <span>(2)</span>
+        <?php dynamic_sidebar( 'categories' ); ?>
     </div>
-    <hr>
-    <div class="catg-item d-flex">
-        <p>Photogrphy</p>
-        <span>(7)</span>
-    </div>
-    <hr>
-    <div class="catg-item d-flex">
-        <p>Animation</p>
-        <span>(4)</span>
-    </div>
-    <hr>
 </div>
+
+
 <div class="post-area">
     <div class="po-head">
         <h5>Popular Post</h5>
     </div>
     <div class="post-item">
+        <?php
+        $backrecent = new WP_Query(array(
+
+            'post_type'       => 'post',
+            'posts_per_page' => 4,
+            'orderby'        => 'title',
+            'order'           => 'DESC',
+            'category_name'  => 'Dollar'
+
+        ));
+
+
+        if (have_posts()) : while( $backrecent-> have_posts()) : $backrecent-> the_post(); ?>
+
         <div class="post-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/post-1.jpg" alt="po-img">
+            <a href="#"> <?php the_post_thumbnail('small', array('class' => 'post-thumb')); ?></a>
         </div>
         <div class="post-text">
-            <h6>Blog Slideshow Post</h6>
-            <p class="p-post-2">Feb 10, 2019</p>
+            <h6><?php the_title(); ?></h6>
+            <p><?php the_time('M d,Y'); ?></p>
         </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
+
     </div>
-    <div class="post-item bl-de-ml">
-        <div class="post-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/post-2.jpg" alt="po-img">
-        </div>
-        <div class="post-text">
-            <h6>Blog Slideshow Post</h6>
-            <p class="p-post-2">Feb 10, 2019</p>
-        </div>
-    </div>
-    <div class="post-item">
-        <div class="post-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/post-3.jpg" alt="po-img">
-        </div>
-        <div class="post-text">
-            <h6>Blog Slideshow Post</h6>
-            <p class="p-post-2">Feb 10, 2019</p>
-        </div>
-    </div>
+
 </div>
 <div class="post-area">
     <div class="po-head">

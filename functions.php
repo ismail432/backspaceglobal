@@ -30,7 +30,7 @@ if (function_exists('add_theme_support'))
     add_image_size('large', 700, '', true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
-    add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('custom-size', 500, 300, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
@@ -93,31 +93,18 @@ function backspace_nav()
     echo $menu;
 }
 
-function footer_first()
+function copyright_first()
 {
     $menu = wp_nav_menu(
         array(
             'theme_location'  => 'footer_menu',
-            'menu'            => '',
-            'container'       => 'div',
-            'container_class' => 'false',
-            'container_id'    => 'false',
-            'menu_class'      => 'false',
-            'menu_id'         => 'false',
-            'echo'            => false,
-            'fallback_cb'     => 'wp_page_menu',
-            'before'          => '',
-            'after'           => '',
-            'link_before'     => '',
-            'link_after'      => '',
-            'items_wrap'      => '<ul class="navbar-nav mr-auto">%3$s</ul>',
-            'depth'           => 0,
-            'walker'          => ''
+            'items_wrap'      => '<ul class="mr-auto">%3$s</ul>',
         )
     );
 
     echo $menu;
 }
+
 
 // Load HTML5 Blank scripts (header.php)
 function backspace_scripts()
@@ -256,25 +243,47 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
-        'name' => __('Widget Area 1', 'html5blank'),
+        'name' => __('Footer First', 'html5blank'),
         'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-1',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
+        'id' => 'footer-first',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => ''
     ));
 
     // Define Sidebar Widget Area 2
     register_sidebar(array(
-        'name' => __('Widget Area 2', 'html5blank'),
+        'name' => __('Footer second area', 'html5blank'),
         'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-2',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
-        'after_widget' => '</div>',
+        'id' => 'footer-second',
+        'before_widget' => '<div class="col-lg-3 col-md-4 col-xs-6"> <div class="footer-single second-footer-part">',
+        'after_widget' => '</div></div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+    // Define Sidebar Widget Area 3
+    register_sidebar(array(
+        'name' => __('Footer third area', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'footer-third',
+        'before_widget' => '<div class="col-md-5 col-lg-4">  <div class="footer-single third-footer-part">',
+        'after_widget' => '</div></div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+    // Define Sidebar Widget Area 4
+    register_sidebar(array(
+        'name' => __('Sidebar first area', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'categories',
+        'before_widget' => ' <div class="catagories">',
+        'after_widget' => '</div>',
+        'before_title' => '<h5>',
+        'after_title' => '</h5>'
+    ));
+
 }
 
 // Remove wp_head() injected Recent Comment styles

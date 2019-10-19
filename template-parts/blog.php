@@ -20,9 +20,11 @@
     <div class="container">
         <div class="row">
 
-            <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
 
             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 silly-pad">
+                <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
                 <div class="sily-text">
                     <h2><?php the_title();?></h2>
                 </div>
@@ -172,13 +174,15 @@
                         <hr>
                     </form>
                 </div>
+                <?php endwhile; else : ?>
+
+                    <p><?php esc_html_e('Sorry, no posts matched  your criteria.'); ?></p>
+
+                <?php endif; ?>
+
             </div>
 
-            <?php endwhile; else : ?>
 
-                <p><?php esc_html_e('Sorry, no posts matched  your criteria.'); ?></p>
-
-            <?php endif; ?>
             <!--Category Area-->
 
 
