@@ -1646,7 +1646,12 @@ a.back i {
     color: #5c5f5f;
 
 }
-
+.instagram-item #gallery-1 .gallery-item {
+    text-align: left;
+}
+#gallery-1 img {
+    border: 2px solid #cfcfcf;
+}
 .po-head h5:after {
     position: absolute;
     content: "";
@@ -1957,3 +1962,7 @@ a.back i {
 .pp-slidesNav .active span {
     background: #fff;
 }
+
+
+
+

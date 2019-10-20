@@ -22,7 +22,10 @@
         });
         </script>
 
-	</head>
+
+
+
+    </head>
 	<body <?php body_class(); ?>>
             <!--Header Area Start-->
             <header class="header-sec">

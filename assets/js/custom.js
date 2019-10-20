@@ -55,7 +55,7 @@
         loop: true,
         dots: false,
         margin: 25,
-        autoplay: true,
+      /*  autoplay: true,*/
         responsive: {
             0: {
                 items: 1,

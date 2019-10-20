@@ -100,32 +100,34 @@
     </div>
 </div>
 <div class="follow-btn text-center">
-    <a class="btn">FOLLOW</a>
+    <a href="" class="btn">FOLLOW</a>
 </div>
 <div class="instagram-item">
-    <div class="insta-head">
+ <!--   <div class="insta-head">
         <h5>Instagram Photos</h5>
     </div>
     <div class="d-flex justify-content-between">
         <div class="insta-img">
-            <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta-1.png" alt="insta"></a>
+            <a href=""><img src="<?php /*echo get_template_directory_uri(); */?>/assets/images/insta-1.png" alt="insta"></a>
         </div>
         <div class="insta-img">
-            <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta-2.png" alt="insta"></a>
+            <a href=""><img src="<?php /*echo get_template_directory_uri(); */?>/assets/images/insta-2.png" alt="insta"></a>
         </div>
         <div class="insta-img">
-            <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta-3.png" alt="insta"></a>
+            <a href=""><img src="<?php /*echo get_template_directory_uri(); */?>/assets/images/insta-3.png" alt="insta"></a>
         </div>
-    </div>
-    <div class="insta-second-item d-flex justify-content-between">
+    </div>-->
+   <!-- <div class="insta-second-item d-flex justify-content-between">
         <div class="insta-img">
-            <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta-4.png" alt="insta"></a>
-        </div>
-        <div class="insta-img">
-            <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta-5.png" alt="insta"></a>
+            <a href=""><img src="<?php /*echo get_template_directory_uri(); */?>/assets/images/insta-4.png" alt="insta"></a>
         </div>
         <div class="insta-img">
-            <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta-6.png" alt="insta"></a>
+            <a href=""><img src="<?php /*echo get_template_directory_uri(); */?>/assets/images/insta-5.png" alt="insta"></a>
         </div>
-    </div>
+        <div class="insta-img">
+            <a href=""><img src="<?php /*echo get_template_directory_uri(); */?>/assets/images/insta-6.png" alt="insta"></a>
+        </div>
+    </div>-->
+    <?php dynamic_sidebar('instagram') ?>
+
 </div>

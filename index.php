@@ -47,11 +47,8 @@
                         </div>
                         <hr>
                         <div class="blog-p-text">
-                            <p class="blog-text-left"> <span>N</span>ulla quntum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos.</p>
-                            <p class="amet-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exercitation ulla.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exercitation ulla.</p>
-                            <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia conse quuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                            </p>
+                            <p class="blog-text-left"> <span>N</span> <?php the_content(); ?></p>
+
                         </div>
                         <div class="neque">
                             <div class="neque-img">
@@ -96,7 +93,10 @@
                             <h6>2 Comments</h6>
                         </div>
                         <div class="blog-form">
-                            <form>
+
+
+
+                          <form>
                                 <div class="blog-text-area">
                                     <div class="comment-user d-flex justify-content-start">
                                         <div class="comment-user-img">
@@ -172,6 +172,9 @@
                                 </div>
                                 <hr>
                             </form>
+
+
+
                         </div>
                     <?php endwhile; else : ?>
 

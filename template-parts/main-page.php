@@ -47,46 +47,9 @@
                     </div>
                     <div class="col-md-12">
                         <div class="owl-carousel owl-theme service-slider">
-                            <div class="service-item">
-                                <div class="service-image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service-icon-01.png" alt="Photo">
-                                </div>
-                                <div class="service-text first-service">
-                                    <h4>01</h4>
-                                    <h3>WordPress <br>Development</h3>
-                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                                </div>
-                            </div>
-                            <div class="service-item">
-                                <div class="service-image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service-icon-02.png" alt="Photo">
-                                </div>
-                                <div class="service-text second-service">
-                                    <h4>02</h4>
-                                    <h3>UI/UX <br>Development</h3>
-                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                                </div>
-                            </div>
-                            <div class="service-item">
-                                <div class="service-image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service-icon-03.png" alt="Photo">
-                                </div>
-                                <div class="service-text first-service">
-                                    <h4>03</h4>
-                                    <h3>Desktop <br>Application</h3>
-                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                                </div>
-                            </div>
-                            <div class="service-item">
-                                <div class="service-image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service-icon-04.png" alt="Photo">
-                                </div>
-                                <div class="service-text second-service">
-                                    <h4>04</h4>
-                                    <h3>Mobile <br>Application</h3>
-                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                                </div>
-                            </div>
+
+                        <?php echo backsp_service(); ?>
+
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -163,25 +126,11 @@
                     <div class="review-slider-bg">
                         <div class="review-slider owl-carousel">
                             <div class="review-item">
-                                <div class="review-image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients-image-01.png" alt="Photo">
-                                </div>
-                                <div class="review-text">
-                                    <h3>“Incredible Service &amp; Amazing Customer Support.”</h3>
-                                    <h5>- Sarah Smith</h5>
-                                    <p>Head of Product, Google</p>
-                                </div>
+
+                                <?php echo reviews(); ?>
+
                             </div>
-                            <div class="review-item">
-                                <div class="review-image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/clients-image-01.png" alt="Photo">
-                                </div>
-                                <div class="review-text">
-                                    <h3>“Incredible Service &amp; Amazing Customer Support.”</h3>
-                                    <h5>- Sarah Smith</h5>
-                                    <p>Head of Product, Google</p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -208,7 +157,10 @@
                         <div class="accrodion-part">
                             <div class="accordion" id="accordionExample">
                                 <div class="card">
-                                    <div class="card-header" id="headingOne">
+
+                                    <?php echo faq(); ?>
+
+                                   <!-- <div class="card-header" id="headingOne">
                                         <h2 class="mb-0">
                                             <button type="button" class="" data-toggle="collapse" data-target="#collapseOne"> <span>UX Designer </span><i class="fa fa-plus"></i></button>
                                         </h2>
@@ -229,9 +181,12 @@
                                             <a href="#" class="apply-btn">Apply Now</a>
                                             <a href="#" class="more-btn">More Details</a>
                                         </div>
-                                    </div>
+                                    </div>-->
+
+
+
                                 </div>
-                                <div class="card">
+                                <!--<div class="card">
                                     <div class="card-header" id="headingTwo">
                                         <h2 class="mb-0">
                                             <button type="button" class="collapsed" data-toggle="collapse" data-target="#collapseTwo"><span>Business Developer</span><i class="fa fa-plus"></i> </button>
@@ -278,7 +233,7 @@
                                             <a href="#" class="more-btn">More Details</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </div>

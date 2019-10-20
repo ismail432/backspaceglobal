@@ -284,6 +284,17 @@ if (function_exists('register_sidebar'))
         'after_title' => '</h5>'
     ));
 
+    // Define Sidebar Widget Area 4
+    register_sidebar(array(
+        'name' => __('Sidebar last area', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'instagram',
+        'before_widget' => '<div class="justify-content-between">',
+        'after_widget' => '</div>',
+        'before_title' => ' <div class="insta-head"> <h5>',
+        'after_title' => '</div></h5>'
+    ));
+
 }
 
 // Remove wp_head() injected Recent Comment styles
@@ -544,6 +555,125 @@ function html5_shortcode_demo($atts, $content = null)
 function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
 {
     return '<h2>' . $content . '</h2>';
+}
+
+/*------------------------------------*\
+	Service Area
+\*------------------------------------*/
+
+function  backsp_service(){
+
+    $ret = "";
+    $args = array(
+        'post_type' => 'service',
+        'orderby' => 'date',
+        'order'   => 'DESC',
+        'posts_per_page' => -1,
+    );
+    $q = new WP_Query($args);
+    foreach($q->posts as $post) {
+
+        $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+        if(!empty($post_thumbnail_id)) {
+            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+        }
+        $ret .= '<div class="service-item">
+                     <div class="service-image">
+                          <img src="'.$featured_img[0].'" alt="man">
+                    </div>
+                      <div class="service-text first-service">
+                                    <h4>'.get_field('ser-number',$post->ID).'</h4>
+                                    <h3>'.get_field('ser-head',$post->ID).'</h3>
+                                    <p>'.get_field('ser-content',$post->ID).'</p>
+                                </div>
+                    <div class="review-content text-center">
+                       '.$post->post_content.'
+                    </div>
+                  
+                </div>';
+
+        $q->next_post();
+    }
+
+    return $ret;
+}
+
+/*------------------------------------*\
+	Reviews Area
+\*------------------------------------*/
+
+function  reviews(){
+
+    $ret = "";
+    $args = array(
+        'post_type' => 'review',
+        'orderby' => 'date',
+        'order'   => 'DESC',
+        'posts_per_page' => -1,
+    );
+    $q = new WP_Query($args);
+    foreach($q->posts as $post) {
+
+        $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+        if(!empty($post_thumbnail_id)) {
+            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+        }
+        $ret .= '<div class="review-image">
+                   <img src="'.$featured_img[0].'" alt="man">
+                    </div>
+                    <div class="review-text">
+                        <h3>'.get_field('review-comment',$post->ID).'</h3>
+                        <h5>'.get_field('review-author',$post->ID).'</h5>
+                        <p>'.get_field('review-author-position',$post->ID).'</p>
+                    </div>';
+
+        $q->next_post();
+    }
+
+    return $ret;
+}
+
+/*------------------------------------*\
+	Faq Area
+\*------------------------------------*/
+
+function  faq(){
+
+    $ret = "";
+    $args = array(
+        'post_type' => 'faq',
+        'orderby' => 'date',
+        'order'   => 'DESC',
+        'posts_per_page' => -1,
+    );
+    $q = new WP_Query($args);
+    foreach($q->posts as $post) {
+
+        $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+        if(!empty($post_thumbnail_id)) {
+            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+        }
+        $ret .= '<div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button type="button" class="" data-toggle="collapse" data-target="#collapseOne"> <span>'.get_field('faq-head',$post->ID).' </span><i class="fa fa-plus"></i></button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>
+                                                    <p>'.get_field('faq-content',$post->ID).'</p>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="apply-btn">'.get_field('faq-first-btn',$post->ID).'</a>
+                                            <a href="#" class="more-btn">'.get_field('faq-second-btn',$post->ID).'</a>
+                                        </div>
+                                    </div>';
+
+        $q->next_post();
+    }
+
+    return $ret;
 }
 
 ?>
