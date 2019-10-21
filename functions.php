@@ -9,7 +9,17 @@
 	External Modules/Files
 \*------------------------------------*/
 
-// Load any external files you have here
+if( file_exists( dirname( __FILE__ ) . '/theme-option/ReduxCore/framework.php' ) ) {
+
+    require_once( dirname( __FILE__ ) . '/theme-option/ReduxCore/framework.php' );
+
+}
+
+if( file_exists( dirname( __FILE__ ) . '/theme-option/sample/config.php' ) ) {
+
+    require_once( dirname( __FILE__ ) . '/theme-option/sample/config.php' );
+
+}
 
 /*------------------------------------*\
 	Theme Support
@@ -556,7 +566,34 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
+/*------------------------------------*\
+	Banner Area
+\*------------------------------------*/
 
+function  banner_words(){
+
+    $ret = "
+    <script type='text/javascript'>
+    var words = [";
+    $ret_arr= array();
+    $args = array(
+        'post_type' => 'banner',
+        'orderby' => 'date',
+        'order'   => 'DESC',
+        'posts_per_page' => -1,
+    );
+    $q = new WP_Query($args);
+
+    foreach($q->posts as $post) {
+        array_push($ret_arr,'"' .$post->post_title.'"');
+        $q->next_post();
+    }
+    $ret .= join(',',$ret_arr);
+    $ret .= "];
+    </script>";
+
+    return $ret;
+}
 /*------------------------------------*\
 	Service Area
 \*------------------------------------*/
@@ -597,6 +634,41 @@ function  backsp_service(){
 
     return $ret;
 }
+/*------------------------------------*\
+	Brand Area
+\*------------------------------------*/
+
+function  brands(){
+
+    $ret = "";
+    $args = array(
+        'post_type' => 'brand',
+        'orderby' => 'date',
+        'order'   => 'DESC',
+        'posts_per_page' => -1,
+    );
+    $q = new WP_Query($args);
+    foreach($q->posts as $post) {
+
+        $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+        if(!empty($post_thumbnail_id)) {
+            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+        }
+        $ret .= '<div class="brand-item">
+                                <div class="brand-image">
+                                   <img src="'.$featured_img[0].'" alt="man">
+                                </div>
+                                <div class="brand-text">
+                                    <h3>'.get_field('brand_head',$post->ID).'</h3>
+                                    <p>'.get_field('brand-title',$post->ID).'</p>
+                                </div>
+                            </div>';
+
+        $q->next_post();
+    }
+
+    return $ret;
+}
 
 /*------------------------------------*\
 	Reviews Area
@@ -618,13 +690,15 @@ function  reviews(){
         if(!empty($post_thumbnail_id)) {
             $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
         }
-        $ret .= '<div class="review-image">
+        $ret .= '  <div class="review-item">
+                        <div class="review-image">
                    <img src="'.$featured_img[0].'" alt="man">
                     </div>
                     <div class="review-text">
                         <h3>'.get_field('review-comment',$post->ID).'</h3>
                         <h5>'.get_field('review-author',$post->ID).'</h5>
                         <p>'.get_field('review-author-position',$post->ID).'</p>
+                      </div>
                     </div>';
 
         $q->next_post();
@@ -647,30 +721,32 @@ function  faq(){
         'posts_per_page' => -1,
     );
     $q = new WP_Query($args);
+    $tmp_switcher = "show";
     foreach($q->posts as $post) {
 
         $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
         if(!empty($post_thumbnail_id)) {
             $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
         }
-        $ret .= '<div class="card-header" id="headingOne">
+        $ret .= '            <div class="card"><div class="card-header" id="heading-'.$post->ID.'">
                                         <h2 class="mb-0">
-                                            <button type="button" class="" data-toggle="collapse" data-target="#collapseOne"> <span>'.get_field('faq-head',$post->ID).' </span><i class="fa fa-plus"></i></button>
+                                            <button type="button" class="collapsed" data-toggle="collapse" data-target="#collapse-'.$post->ID.'"> <span>'.get_field('faq-head',$post->ID).' </span><i class="fa fa-plus"></i></button>
                                         </h2>
                                     </div>
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div id="collapse-'.$post->ID.'" class="collapse '.$tmp_switcher.'" aria-labelledby="heading-'.$post->ID.'" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            <ul>
-                                                <li>
-                                                    <p>'.get_field('faq-content',$post->ID).'</p>
-                                                </li>
-                                            </ul>
+                                          '.get_field('faq-content',$post->ID).'
                                             <a href="#" class="apply-btn">'.get_field('faq-first-btn',$post->ID).'</a>
                                             <a href="#" class="more-btn">'.get_field('faq-second-btn',$post->ID).'</a>
+                                        </div>
                                         </div>
                                     </div>';
 
         $q->next_post();
+
+        if (!empty($tmp_switcher)){
+            $tmp_switcher = "";
+        }
     }
 
     return $ret;

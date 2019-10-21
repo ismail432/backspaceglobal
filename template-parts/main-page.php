@@ -5,9 +5,10 @@
 
         <!--Banner Area Start-->
         <div class="section banner-sec">
-            <div class="">
+            <?php echo banner_words(); ?>
                 <div class="container">
                     <div class="row">
+
                         <div class="col-lg-8 col-md-7">
                             <div class="banner-text">
                                 <h1>The Home of World Class</h1>
@@ -31,7 +32,7 @@
                         <li><span></span></li>
                     </ul>
                 </div>
-            </div>
+
         </div>
         <!--Banner Area End-->
 
@@ -80,24 +81,9 @@
                     </div>
                     <div class="col-lg-8 col-md-6">
                         <div class="brand-slider owl-carousel">
-                            <div class="brand-item">
-                                <div class="brand-image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/brands-01.png" alt="Photo">
-                                </div>
-                                <div class="brand-text">
-                                    <h3>Creativity is nothing but a mind set free</h3>
-                                    <p>WordPress</p>
-                                </div>
-                            </div>
-                            <div class="brand-item">
-                                <div class="brand-image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/brands-02.png" alt="Photo">
-                                </div>
-                                <div class="brand-text">
-                                    <h3>Creativity is nothing but a mind set free</h3>
-                                    <p>WordPress</p>
-                                </div>
-                            </div>
+
+                            <?php echo brands(); ?>
+
                         </div>
                     </div>
                 </div>
@@ -125,11 +111,8 @@
                 <div class="col-md-10 offset-md-1">
                     <div class="review-slider-bg">
                         <div class="review-slider owl-carousel">
-                            <div class="review-item">
 
                                 <?php echo reviews(); ?>
-
-                            </div>
 
                         </div>
                     </div>
@@ -156,7 +139,7 @@
                     <div class="col-lg-6 col-md-7">
                         <div class="accrodion-part">
                             <div class="accordion" id="accordionExample">
-                                <div class="card">
+
 
                                     <?php echo faq(); ?>
 
@@ -185,7 +168,6 @@
 
 
 
-                                </div>
                                 <!--<div class="card">
                                     <div class="card-header" id="headingTwo">
                                         <h2 class="mb-0">
