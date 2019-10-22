@@ -26,7 +26,7 @@
                     <div class="col-md-6 web html wordpress app all" data-ref="mixitup-target">
                         <div class="single-portfolio"  >
                             <div class="single-portfolio-image">
-                                <img src="assets/images/portfolio-01.png" alt="Photo">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio-01.png" alt="Photo">
                             </div>
                             <div class="single-portfolio-text">
                                 <a href="single-portfolio.html">Project name <i class="fas fa-angle-double-right ml-auto"></i></a>
@@ -37,7 +37,7 @@
                     <div class="col-md-6 design app all" data-ref="mixitup-target">
                         <div class="single-portfolio"  >
                             <div class="single-portfolio-image">
-                                <img src="assets/images/portfolio-02.png" alt="Photo">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio-02.png" alt="Photo">
                             </div>
                             <div class="single-portfolio-text">
                                 <a href="single-portfolio.html">Project name <i class="fas fa-angle-double-right ml-auto"></i></a>
@@ -48,7 +48,7 @@
                     <div class="col-md-6 web wordpress html all" data-ref="mixitup-target">
                         <div class="single-portfolio"  >
                             <div class="single-portfolio-image">
-                                <img src="assets/images/portfolio-03.png" alt="Photo">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio-03.png" alt="Photo">
                             </div>
                             <div class="single-portfolio-text">
                                 <a href="single-portfolio.html">Project name <i class="fas fa-angle-double-right ml-auto"></i></a>
@@ -59,7 +59,7 @@
                     <div class="col-md-6 design wordpress all" data-ref="mixitup-target">
                         <div class="single-portfolio"  >
                             <div class="single-portfolio-image">
-                                <img src="assets/images/portfolio-04.png" alt="Photo">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio-04.png" alt="Photo">
                             </div>
                             <div class="single-portfolio-text">
                                 <a href="single-portfolio.html">Project name <i class="fas fa-angle-double-right ml-auto"></i></a>
@@ -70,7 +70,7 @@
                     <div class="col-md-6 html web wordpress app all" data-ref="mixitup-target">
                         <div class="single-portfolio"  >
                             <div class="single-portfolio-image">
-                                <img src="assets/images/portfolio-05.png" alt="Photo">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio-05.png" alt="Photo">
                             </div>
                             <div class="single-portfolio-text">
                                 <a href="single-portfolio.html">Project name <i class="fas fa-angle-double-right ml-auto"></i></a>
@@ -81,7 +81,7 @@
                     <div class="col-md-6 design all" data-ref="mixitup-target">
                         <div class="single-portfolio"  >
                             <div class="single-portfolio-image">
-                                <img src="assets/images/portfolio-06.png" alt="Photo">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio-06.png" alt="Photo">
                             </div>
                             <div class="single-portfolio-text">
                                 <a href="single-portfolio.html">Project name <i class="fas fa-angle-double-right ml-auto"></i></a>

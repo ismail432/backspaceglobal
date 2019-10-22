@@ -10,7 +10,7 @@
 
 
     // This is your option name where all the Redux data is stored.
-    $opt_name = "redux_demo";
+    $opt_name = "backspace";
 
     // This line is only for altering the demo. Can be easily removed.
     $opt_name = apply_filters( 'redux_demo/opt_name', $opt_name );
@@ -262,25 +262,185 @@
      */
 
 
+    /**********For Theme Option Code is here : Ismail Hossain***************/
 
-    Redux::setSection( $opt_name, array(
-        'title'            => __( 'Checkbox', 'redux-framework-demo' ),
-        'id'               => 'basic-checkbox',
-        'subsection'       => true,
-        'customizer_width' => '450px',
-        'desc'             => __( 'For full documentation on this field, visit: ', 'redux-framework-demo' ) . '<a href="//docs.reduxframework.com/core/fields/checkbox/" target="_blank">docs.reduxframework.com/core/fields/checkbox/</a>',
-        'fields'           => array(
-            array(
-                'id'       => 'opt-checkbox',
-                'type'     => 'checkbox',
-                'title'    => __( 'Checkbox Option', 'redux-framework-demo' ),
-                'subtitle' => __( 'No validation can be done on this field type', 'redux-framework-demo' ),
-                'desc'     => __( 'This is the description field, again good for additional info.', 'redux-framework-demo' ),
-                'default'  => '1'// 1 = on | 0 = off
+
+
+
+
+Redux::setSection($opt_name, array(
+    'title'     => __('Logo Options', 'backspace'),
+    'id'        => 'logo-area',
+    'fields'    => array(
+        array(
+            'title'     => __('Upload Logo', 'backspace'),
+            'id'        => 'logo-upload',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images/logo.png'
+            )
+        )
+     )
+));
+
+Redux::setSection($opt_name, array(
+    'title'     => __('About Banner Options', 'backspace'),
+    'id'        => 'blog-banner-area',
+    'fields'    => array(
+        array(
+            'title'     => __('Blog Banner Title', 'backspace'),
+            'id'        => 'blog-banner-title',
+            'type'      => 'text',
+            'default'   => 'A creative team of professionals who love the digital.'
             ),
 
-        )
-    ) );
+        array(
+            'title'     => __('Blog Banner Content', 'backspace'),
+            'id'        => 'blog-banner-content',
+            'type'      => 'editor',
+            'default'   => 'Level Level is a full service digital agency consisting of more than 24 professionals. We create and support large-scale websites and offer consultancy services to enterprise clients. We help brands connect to their customers by creating outstanding websites and applications that offer the best user experience on any device.'
+
+        ),
+        array(
+            'title'     => __('Blog Banner Image', 'backspace'),
+            'id'        => 'team-banner-image',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri() . '/assets/images/team-banner.png'
+            ),
+        ),
+     ),
+));
+
+Redux::setSection($opt_name, array(
+    'title'     => __('About-us-section', 'backspace'),
+    'id'        => 'about-area',
+    'fields'    => array(
+        array(
+            'title'     => __('About Subtitle', 'backspace'),
+            'id'        => 'about-subtitle',
+            'type'      => 'text',
+            'default'   => 'OUR STORY'
+        ),
+        array(
+            'title'     => __('About title', 'backspace'),
+            'id'        => 'about-title',
+            'type'      => 'text',
+            'default'   => 'When you believe a thing, believe it all the way, implicitly and unquestionably.'
+        ),
+        array(
+            'title'     => __('About content', 'backspace'),
+            'id'        => 'about-content',
+            'type'      => 'editor',
+            'default'   => 'It is not enough that we build products that function, that are understandable and usable, we also need to build products that bring joy and excitement, pleasure and fun, and, yes, beauty to people’s lives. Creativity is to discover a question that has never been asked. If one brings up an idiosyncratic question, the answer he gives will necessarily be unique as well.'
+        ),
+        array(
+            'title'     => __('About 2nd Subtitle', 'backspace'),
+            'id'        => 'about-subtitle-2nd',
+            'type'      => 'text',
+            'default'   => 'WHAT WE DO'
+        ),
+        array(
+            'title'     => __('About 2nd title', 'backspace'),
+            'id'        => 'about-title-2nd',
+            'type'      => 'text',
+            'default'   => 'Where do new ideas come from? The answer is simple: differences.'
+        ),
+        array(
+            'title'     => __('About 2nd content', 'backspace'),
+            'id'        => 'about-content-2nd',
+            'type'      => 'editor',
+            'default'   => 'It is not enough that we build products that function, that are understandable and usable, to be unique as well.'
+        ),
+        array(
+            'title'     => __('About Link Area head', 'backspace'),
+            'id'        => 'about-link-head',
+            'type'      => 'text',
+            'default'   => 'Strategy'
+        ),
+        array(
+            'title'     => __('About Link Area List', 'backspace'),
+            'id'        => 'about-link-list',
+            'type'      => 'editor',
+
+        ),
+        array(
+            'title'     => __('About 2nd Link Area head', 'backspace'),
+            'id'        => 'about-link-head-2nd',
+            'type'      => 'text',
+            'default'   => 'Solutions'
+        ),
+
+        array(
+            'title'     => __('About Link Area 2nd List', 'backspace'),
+            'id'        => 'about-link-list-2nd',
+            'type'      => 'editor',
+
+        ),
+    )
+));
+
+Redux::setSection($opt_name, array(
+    'title'     => __('Creative-Section', 'backspace'),
+    'id'        => 'creative-image',
+    'fields'    => array(
+        array(
+            'title'     => __('Career bg Upload', 'backspace'),
+            'id'        => 'career-bg',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images/career-img.png'
+            )
+        ),
+        array(
+            'title'     => __('Upload Image', 'backspace'),
+            'id'        => 'crea-imag',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images/creative-image.png'
+            )
+        ),
+        array(
+            'title'     => __('Creative-Heading', 'backspace'),
+            'id'        => 'crea-head',
+            'type'      => 'text',
+            'default'   => 'Grow With the Most Creative Team'
+        ),
+          array(
+              'title'     => __('Creative-Button', 'backspace'),
+              'id'        => 'crea-btn',
+              'type'      => 'text',
+              'default'   => 'View Openings'
+          )
+
+    )
+));
+
+
+
+
+
+
+
+
+
+/**********For Theme Option Code End : Ismail Hossain***************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /*

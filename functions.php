@@ -130,25 +130,27 @@ function backspace_scripts()
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
     */
-        wp_register_script('jqueryslim', get_template_directory_uri() . '/assets/js/jquery-3.3.1.slim.min.js', array(), '3.1.3'); // Conditionizr
+        wp_register_script('jqueryslim', get_template_directory_uri() . '/assets/js/jquery-3.3.1.slim.min.js', array(), '3.1.3','true'); // Conditionizr
         wp_enqueue_script('jqueryslim'); // Enqueue it!
-        wp_register_script('scroll-jquery', get_template_directory_uri() . '/assets/js/scroll-jquery.js', array(), '1.1.0'); // Conditionizr
+        wp_register_script('scroll-jquery', get_template_directory_uri() . '/assets/js/scroll-jquery.js', array(), '1.1.0','true'); // Conditionizr
         wp_enqueue_script('scroll-jquery'); // Enqueue it!
-        wp_register_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '1.1.0'); // Conditionizr
+        wp_register_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '1.1.0','true'); // Conditionizr
         wp_enqueue_script('bootstrap'); // Enqueue it!
-        wp_register_script('owl', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array(), '1.1.0'); // Conditionizr
+        wp_register_script('owl', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array(), '1.1.0','true'); // Conditionizr
         wp_enqueue_script('owl'); // Enqueue it!
-        wp_register_script('wow', get_template_directory_uri() . '/assets/js/wow.min.js', array(), '1.1.0'); // Conditionizr
+        wp_register_script('wow', get_template_directory_uri() . '/assets/js/wow.min.js', array(), '1.1.0','true'); // Conditionizr
         wp_enqueue_script('wow'); // Enqueue it!
-        wp_register_script('scroll', get_template_directory_uri() . '/assets/js/scroll-to-top.js', array(), '1.1.0'); // Conditionizr
+        wp_register_script('scroll', get_template_directory_uri() . '/assets/js/scroll-to-top.js', array(), '1.1.0','true'); // Conditionizr
         wp_enqueue_script('scroll'); // Enqueue it!
-        wp_register_script('magnify', get_template_directory_uri() . '/assets/js/magnify-popup.js', array(), '1.1.0'); // Conditionizr
+        wp_register_script('magnify', get_template_directory_uri() . '/assets/js/magnify-popup.js', array(), '1.1.0','true'); // Conditionizr
         wp_enqueue_script('magnify'); // Enqueue it!
-        wp_register_script('accrodion', get_template_directory_uri() . '/assets/js/accrodion.js', array(), '1.1.0'); // Conditionizr
+        wp_register_script('mixitup', get_template_directory_uri() . '/assets/js/mixitup.min.js', array(), '1.1.0','true'); // Conditionizr
+        wp_enqueue_script('mixitup'); // Enqueue it!
+        wp_register_script('accrodion', get_template_directory_uri() . '/assets/js/accrodion.js', array(), '1.1.0','true'); // Conditionizr
         wp_enqueue_script('accrodion'); // Enqueue it!
         wp_register_script('typed', get_template_directory_uri() . '/assets/js/typed.js', array(), '1.1.0', 'true'); // Conditionizr
         wp_enqueue_script('typed'); // Enqueue it!
-        wp_register_script('pagepiling', get_template_directory_uri() . '/assets/js/jquery.pagepiling.js', array(), '1.1.0'); // Conditionizr
+        wp_register_script('pagepiling', get_template_directory_uri() . '/assets/js/jquery.pagepiling.js', array(), '1.1.0','true'); // Conditionizr
         wp_enqueue_script('pagepiling'); // Enqueue it!
         wp_register_script('customjs', get_template_directory_uri() . '/assets/js/custom.js', array(), '1.1.0', 'true'); // Conditionizr
         wp_enqueue_script('customjs'); // Enqueue it!
@@ -751,5 +753,50 @@ function  faq(){
 
     return $ret;
 }
+
+
+
+/*------------------------------------*\
+	Our Team Area
+\*------------------------------------*/
+
+function  team(){
+
+    $ret = "";
+    $args = array(
+        'post_type' => 'our_team',
+        'orderby' => 'date',
+        'order'   => 'DESC',
+        'posts_per_page' => -1,
+    );
+    $q = new WP_Query($args);
+    foreach($q->posts as $post) {
+
+        $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+        if(!empty($post_thumbnail_id)) {
+            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+        }
+        $designations = wp_get_post_terms( $post->ID, 'designation' );
+        $print_designation = "";
+        foreach ($designations as $designation){
+            $print_designation .= $designation->name . ", ";
+        }
+        $print_designation = substr($print_designation,0,strlen($print_designation)-2);
+        $ret .= '<div class="col-lg-3 col-md-4">
+                <div class="team-member">
+                    <div class="team-member-image">
+                         <img src="'.$featured_img[0].'" alt="man">
+                    </div>
+                    <a href="#">'.$post->post_title.'</a>
+                    <p>'.$print_designation.'</p>
+                </div>
+            </div>';
+
+        $q->next_post();
+    }
+
+    return $ret;
+}
+
 
 ?>
