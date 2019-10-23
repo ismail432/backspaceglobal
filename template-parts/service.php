@@ -58,13 +58,13 @@
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs d-flex" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link flex-fill active" data-toggle="tab" href="#home"><img src="assets/images/ux-logo.png" alt="Photo">UI/UX Design</a>
+                                <a class="nav-link flex-fill active" data-toggle="tab" href="#home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/ux-logo.png" alt="Photo">UI/UX Design</a>
                             </li>
                             <li class="nav-item flex-fill">
-                                <a class="nav-link" data-toggle="tab" href="#menu1"><img src="assets/images/www-logo.png" alt="Photo">Web Development</a>
+                                <a class="nav-link" data-toggle="tab" href="#menu1"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/www-logo.png" alt="Photo">Web Development</a>
                             </li>
                             <li class="nav-item flex-fill">
-                                <a class="nav-link" data-toggle="tab" href="#menu2"><img src="assets/images/app-logo.png" alt="Photo">App Development</a>
+                                <a class="nav-link" data-toggle="tab" href="#menu2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/app-logo.png" alt="Photo">App Development</a>
                             </li>
                         </ul>
 
@@ -138,7 +138,7 @@
             <div class="row">
                 <div class="col-md-6 col-lg-7">
                     <div class="creative-image">
-                        <img src="assets/images/with-us.png" alt="Photo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/with-us.png" alt="Photo">
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6">

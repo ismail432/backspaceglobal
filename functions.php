@@ -148,10 +148,9 @@ function backspace_scripts()
         wp_enqueue_script('mixitup'); // Enqueue it!
         wp_register_script('accrodion', get_template_directory_uri() . '/assets/js/accrodion.js', array(), '1.1.0','true'); // Conditionizr
         wp_enqueue_script('accrodion'); // Enqueue it!
-        wp_register_script('typed', get_template_directory_uri() . '/assets/js/typed.js', array(), '1.1.0', 'true'); // Conditionizr
-        wp_enqueue_script('typed'); // Enqueue it!
-        wp_register_script('pagepiling', get_template_directory_uri() . '/assets/js/jquery.pagepiling.js', array(), '1.1.0','true'); // Conditionizr
-        wp_enqueue_script('pagepiling'); // Enqueue it!
+
+
+
         wp_register_script('customjs', get_template_directory_uri() . '/assets/js/custom.js', array(), '1.1.0', 'true'); // Conditionizr
         wp_enqueue_script('customjs'); // Enqueue it!
 
@@ -194,6 +193,10 @@ function backspace_styles()
     if (is_front_page()) {
         wp_register_style('pagepiling', get_template_directory_uri() . '/assets/css/jquery.pagepiling.css', array(), '1.0', 'all');
         wp_enqueue_style('pagepiling'); // Enqueue it!
+        wp_register_script('typed', get_template_directory_uri() . '/assets/js/typed.js', array(), '1.1.0', 'true'); // Conditionizr
+        wp_enqueue_script('typed'); // Enqueue it!
+        wp_register_script('pagepiling', get_template_directory_uri() . '/assets/js/jquery.pagepiling.js', array(), '1.1.0','true'); // Conditionizr
+        wp_enqueue_script('pagepiling'); // Enqueue it!
     }
     wp_register_style('custom-css', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('custom-css'); // Enqueue it!
@@ -797,6 +800,67 @@ function  team(){
 
     return $ret;
 }
+/*------------------------------------*\
+	Portfolio Menu
+\*------------------------------------*/
+function backspace_gallery_category(){
+    $taxonomies = get_terms( array(
+        'taxonomy' => 'gallery_category',
+        'hide_empty' => true,
+    ) );
+    $ret = "";
+
+    if ( !empty($taxonomies) ) {
+        foreach( $taxonomies as $category ) {
+            $ret .= '<li class="filter" data-filter=".t'.$category->term_id.'">'.$category->name.'</li>';
+        }
+    }
+    return $ret;
+}
+
+
+
+function backspace_gallery_photos(){
+    $ret = "";
+    $args = array(
+        'post_type' => 'gallery',
+        'orderby' => 'date',
+        'order'   => 'DESC',
+        'posts_per_page' => -1,
+    );
+    $q = new WP_Query($args);
+
+    foreach($q->posts as $post) {
+        $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+
+        if(!empty($post_thumbnail_id)) {
+            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+        }
+        $gallery_categories = wp_get_post_terms( $post->ID, 'gallery_category' );
+        $str_gallery_category = "";
+        $str_gallery_category_title = "";
+        foreach($gallery_categories as $gallery_category){
+            $str_gallery_category .=  "t".$gallery_category->term_id . " ";
+            $str_gallery_category_title .= $gallery_category->name . ", ";
+        }
+
+        $str_gallery_category_title = rtrim($str_gallery_category_title,", ");
+        $str_gallery_category = rtrim($str_gallery_category," ");
+        $ret .='<div class="col-md-6 web html wordpress app all '.$str_gallery_category.' " data-ref="mixitup-target">
+                        <div class="single-portfolio"  >
+                            <div class="single-portfolio-image">
+                                <img src="'.$featured_img[0].'" alt="img23">
+                            </div>
+                            <div class="single-portfolio-text">
+                                <a href="single-portfolio.html">'.$post->post_title.'<i class="fas fa-angle-double-right ml-auto"></i></a>
+                                <p>'.$str_gallery_category_title.'</p>
+                            </div>
+                        </div>
+                    </div>';
+    }
+    return $ret;
+}
+
 
 
 ?>
