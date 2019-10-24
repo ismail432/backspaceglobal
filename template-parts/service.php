@@ -6,8 +6,8 @@
             <div class="row">
                 <div class="col-md-10">
                     <div class="team-banner-text">
-                        <h2>Visual design and development digital solutions</h2>
-                        <p>Level Level is a full service digital agency consisting of more than 24 professionals. We create and support large-scale websites and offer consultancy services to enterprise clients. We help brands connect to their customers by creating outstanding websites and applications that offer the best user experience on any device.</p>
+                        <h2><?php global $backspace; echo $backspace['service-banner-title'];  ?></h2>
+                        <p><?php global $backspace; echo $backspace['service-banner-content'];  ?></p>
                     </div>
                 </div>
             </div>
@@ -26,21 +26,22 @@
             <div class="about-text">
                 <div class="row">
                     <div class="col-md-3">
-                        <h5>Process</h5>
+                        <h5><?php global $backspace; echo $backspace['service-subtitle'];  ?></h5>
                     </div>
                     <div class="col-md-9">
-                        <h2>We are what we repeatedly do. Excellence, then is not an act, but a habit.</h2>
-                        <p>It is not enough that we build products that function, that are understandable and usable, we also need to build products that bring joy and excitement, pleasure and fun, and, yes, beauty to people’s lives. Creativity is to discover a question that has never been asked. If one brings up an idiosyncratic question, the answer he gives will necessarily be unique as well.</p>
+                        <h2><?php global $backspace; echo $backspace['service-title'];  ?></h2>
+                        <p><?php global $backspace; echo $backspace['service-content'];  ?></p>
                     </div>
                 </div>
             </div>
             <div class="about-text" style="margin-bottom: 0">
                 <div class="row">
                     <div class="col-md-3">
-                        <h5>Services</h5>
+                        <h5><?php global $backspace; echo $backspace['service-subtitle-2nd'];  ?></h5>
                     </div>
                     <div class="col-md-9">
-                        <h2>Areas of expertise</h2>
+                        <h2><?php global $backspace; echo $backspace['service-title-2nd'];  ?></h2>
+                        <p><?php global $backspace; echo $backspace['service-content-2nd'];  ?></p>
                     </div>
                 </div>
             </div>
@@ -128,7 +129,7 @@
 
 
     <!--Career Area Start-->
-    <div class="balb-sec"></div>
+    <div class="balb-sec" style="background: url(<?php global $backspace; echo $backspace['balb-bg']['url'];  ?>"></div>
     <!--Career Area End-->
 
 
@@ -138,14 +139,14 @@
             <div class="row">
                 <div class="col-md-6 col-lg-7">
                     <div class="creative-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/with-us.png" alt="Photo">
+                        <img src="<?php global $backspace; echo $backspace['crea-2-imag']['url'];  ?>" alt="Photo">
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6">
                     <div class="creative-text">
-                        <h3>Interested Working With Us?</h3>
-                        <p>We can build your product with a team that establishes a clear design process, meets deadlines, and delivers.</p>
-                        <a href="#">Contact Us</a>
+                        <h3> <?php global $backspace; echo $backspace['crea-2-head'];  ?></h3>
+                        <p><?php global $backspace; echo $backspace['crea-2-content'];  ?></p>
+                        <a href="#"> <?php global $backspace; echo $backspace['crea-2-btn'];  ?></a>
                     </div>
                 </div>
             </div>
@@ -153,4 +154,4 @@
     </div>
     <!--Creative Area End-->
 
-
+<?php get_footer(); ?>

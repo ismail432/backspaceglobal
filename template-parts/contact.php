@@ -29,7 +29,9 @@
                 <div class="contact-form">
                     <h3>We’d love to hear from you</h3>
                     <form>
-                        <div class="form-group">
+
+                        <?php dynamic_sidebar( 'contact' ); ?>
+                        <!--<div class="form-group">
                             <label for="fullName">Full Name</label>
                             <input type="text" class="form-control" id="fullName" placeholder="">
                         </div>
@@ -45,7 +47,10 @@
                             <label for="exampleFormControlTextarea1">Your Message</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
                         </div>
-                        <button type="submit" class="btn">Send Message</button>
+                        <button type="submit" class="btn">Send Message</button>-->
+
+
+
                     </form>
                 </div>
             </div>

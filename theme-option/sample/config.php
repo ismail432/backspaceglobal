@@ -418,10 +418,139 @@ Redux::setSection($opt_name, array(
 
 
 
+Redux::setSection($opt_name, array(
+    'title'     => __('Service-section', 'backspace'),
+    'id'        => 'service-area',
+    'fields'    => array(
+        array(
+            'title'     => __('Blog Banner Title', 'backspace'),
+            'id'        => 'service-banner-title',
+            'type'      => 'text',
+            'default'   => 'A creative team of professionals who love the digital.'
+        ),
+
+        array(
+            'title'     => __('Blog Banner Content', 'backspace'),
+            'id'        => 'service-banner-content',
+            'type'      => 'editor',
+            'default'   => 'Level Level is a full service digital agency consisting of more than 24 professionals. We create and support large-scale websites and offer consultancy services to enterprise clients. We help brands connect to their customers by creating outstanding websites and applications that offer the best user experience on any device.'
+
+        ),
+
+        array(
+            'title'     => __('About Subtitle', 'backspace'),
+            'id'        => 'service-subtitle',
+            'type'      => 'text',
+            'default'   => 'OUR STORY'
+        ),
+        array(
+            'title'     => __('About title', 'backspace'),
+            'id'        => 'service-title',
+            'type'      => 'text',
+            'default'   => 'When you believe a thing, believe it all the way, implicitly and unquestionably.'
+        ),
+        array(
+            'title'     => __('About content', 'backspace'),
+            'id'        => 'service-content',
+            'type'      => 'editor',
+            'default'   => 'It is not enough that we build products that function, that are understandable and usable, we also need to build products that bring joy and excitement, pleasure and fun, and, yes, beauty to people’s lives. Creativity is to discover a question that has never been asked. If one brings up an idiosyncratic question, the answer he gives will necessarily be unique as well.'
+        ),
+        array(
+            'title'     => __('About 2nd Subtitle', 'backspace'),
+            'id'        => 'service-subtitle-2nd',
+            'type'      => 'text',
+            'default'   => 'WHAT WE DO'
+        ),
+        array(
+            'title'     => __('About 2nd title', 'backspace'),
+            'id'        => 'service-title-2nd',
+            'type'      => 'text',
+            'default'   => 'Where do new ideas come from? The answer is simple: differences.'
+        ),
+        array(
+            'title'     => __('About 2nd content', 'backspace'),
+            'id'        => 'service-content-2nd',
+            'type'      => 'editor',
+            'default'   => 'It is not enough that we build products that function, that are understandable and usable, to be unique as well.'
+        ),
+        array(
+            'title'     => __('Career bg Upload', 'backspace'),
+            'id'        => 'balb-bg',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images/balb-image.png'
+            )
+        ),
+        array(
+            'title'     => __('Upload Image', 'backspace'),
+            'id'        => 'crea-2-imag',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images/creative-image.png'
+            )
+        ),
+
+        array(
+            'title'     => __('Creative-Heading', 'backspace'),
+            'id'        => 'crea-2-head',
+            'type'      => 'text',
+            'default'   => 'Grow With the Most Creative Team'
+        ),
+        array(
+            'title'     => __('Creative-content', 'backspace'),
+            'id'        => 'crea-2-content',
+            'type'      => 'editor',
+            'default'   => 'Grow With the Most Creative Team'
+        ),
+        array(
+            'title'     => __('Creative-Button', 'backspace'),
+            'id'        => 'crea-2-btn',
+            'type'      => 'text',
+            'default'   => 'View Openings'
+        )
+    )
+));
 
 
 
+Redux::setSection($opt_name, array(
+    'title'     => __('Carrier-section', 'backspace'),
+    'id'        => 'carrier-area',
+    'fields'    => array(
+        array(
+            'title'     => __('Carrier Banner Title', 'backspace'),
+            'id'        => 'meet-sec-banner',
+            'type'      => 'editor',
+            'default'   => 'BackspaceBD careers'
+        ),
+        array(
+            'title'     => __('Meet area', 'backspace'),
+            'id'        => 'meet-text',
+            'type'      => 'editor',
+            'default'   => 'BackspaceBD careers'
+        ),
+      )
+    ));
 
+
+Redux::setSection($opt_name, array(
+    'title'     => __('Top Contact Section', 'backspace'),
+    'id'        => 'top-contact-area',
+    'fields'    => array(
+        array(
+            'title'     => __('Phone area', 'backspace'),
+            'id'        => 'phone-number',
+            'type'      => 'editor',
+            'default'   => '+8801711124445'
+        ),
+        array(
+            'title'     => __('Email area', 'backspace'),
+            'id'        => 'email-id',
+            'type'      => 'editor',
+            'default'   => 'example_example@gmail.com'
+        ),
+    )
+));
 
 
 /**********For Theme Option Code End : Ismail Hossain***************/

@@ -11,14 +11,6 @@
             <div class="row">
                 <div class="col-md-4 col-lg-5">
                     <div class="portfolio-tab controls">
-                        <!-- <ul>
-                             <li class="filter" data-filter="all">All Projects</li>
-                             <li class="filter" data-filter=".design">UI/UX Design</li>
-                             <li class="filter" data-filter=".wordpress">WordPress</li>
-                             <li class="filter" data-filter=".html">HTML</li>
-                             <li class="filter" data-filter=".app">Mobile App</li>
-                             <li class="filter" data-filter=".web">Custom Web</li>
-                         </ul>-->
                         <ul>
                             <li class="filter" data-filter="all">All</li>
                             <?php echo backspace_gallery_category(); ?>
@@ -26,7 +18,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-8 col-lg-7" data-ref="mixitup-container">>
+                <div class="col-md-8 col-lg-7" data-ref="mixitup-container">
                     <div class="row">
                         <?php echo backspace_gallery_photos(); ?>
                     </div>

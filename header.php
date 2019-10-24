@@ -31,8 +31,8 @@
 
                         <form class="form-inline my-2 my-lg-0">
                             <ul class="navbar nav-right-side mr-auto">
-                                <li class="nav-item"><a href="#"><i class="fa fa-phone"></i> +8801711124445</a></li>
-                                <li class="nav-item"><a href="#"><i class="fas fa-envelope"></i> example_example@gmail.com</a></li>
+                                <li class="nav-item"><a href="#"><?php global $backspace; echo $backspace['phone-number'];  ?></a></li>
+                                <li class="nav-item"><a href="#"><?php global $backspace; echo $backspace['email-id'];  ?></a></li>
                                 <li class="search"><a href="#"><i class="fas fa-search"></i></a></li>
                             </ul>
                         </form>

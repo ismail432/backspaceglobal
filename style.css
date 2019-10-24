@@ -1,11 +1,11 @@
 /*
-	Theme Name: backspaceglobal
-	Theme URI: http://html5blank.com
-	Description: HTML5 Blank WordPress Theme
+	Theme Name: Backspace Global
+	Theme URI: http://backspaceglobal.com
+	Description: Backspace Global WordPress Theme
 	Version: 1.4.3
-	Author: Todd Motto (@toddmotto)
-	Author URI: http://toddmotto.com
-	Tags: Blank, HTML5, CSS3
+	Author: Backspace Global
+	Author URI: http://backspaceglobal.com
+	Tags:  HTML5, CSS3,PHP,Jquery,Javascript, Wordpress
 	Text Domain: backspace
 
 	License: MIT
@@ -855,7 +855,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 }
 
 .balb-sec {
-    background: url(assets/images/balb-image.png) no-repeat;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
     height: 400px;
@@ -909,7 +909,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 }
 
 .main-service-sec .nav-item a.active {
-    background: #f8f8f8;
+    background: #695b5b;
+    color: #fff;
 }
 
 .main-service-sec .nav-tabs {
@@ -1263,7 +1264,7 @@ a.back i {
 }
 
 .single-job:hover {
-    background: url(assets/images/single-job-bg.png) no-repeat;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     color: #fff;
     transition: .5s;

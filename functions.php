@@ -309,6 +309,17 @@ if (function_exists('register_sidebar'))
         'before_title' => ' <div class="insta-head"> <h5>',
         'after_title' => '</div></h5>'
     ));
+    // Define Sidebar Widget Area 4
+    register_sidebar(array(
+        'name' => __('Contact form area', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'contact',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => ''
+    ));
+
 
 }
 
@@ -836,6 +847,7 @@ function backspace_gallery_photos(){
         if(!empty($post_thumbnail_id)) {
             $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
         }
+
         $gallery_categories = wp_get_post_terms( $post->ID, 'gallery_category' );
         $str_gallery_category = "";
         $str_gallery_category_title = "";
@@ -861,6 +873,71 @@ function backspace_gallery_photos(){
     return $ret;
 }
 
+/*------------------------------------*\
+	Meet-slider  Area
+\*------------------------------------*/
+
+function  meetslider(){
+
+    $ret = "";
+    $args = array(
+        'post_type' => 'meet_slider',
+        'orderby' => 'date',
+        'order'   => 'DESC',
+        'posts_per_page' => -1,
+    );
+    $q = new WP_Query($args);
+    foreach($q->posts as $post) {
+
+        $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+        if(!empty($post_thumbnail_id)) {
+            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+        }
+        $ret .= '<div class="meet-item">
+            <div class="meet-image">
+                 <img src="'.$featured_img[0].'" alt="img23">
+            </div>
+        </div>';
+
+        $q->next_post();
+    }
+
+    return $ret;
+}
 
 
+/*------------------------------------*\
+	Look for  Area
+\*------------------------------------*/
+
+function  lookfor(){
+
+    $ret = "";
+    $args = array(
+        'post_type' => 'look_for',
+        'orderby' => 'date',
+        'order'   => 'DESC',
+        'posts_per_page' => -1,
+    );
+    $q = new WP_Query($args);
+    foreach($q->posts as $post) {
+
+        $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+        if(!empty($post_thumbnail_id)) {
+            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+        }
+        $ret .= ' <div class="col-md-4">
+                    <div class="single-job" style="background: url('.$featured_img[0].')">
+                        <h3>'.$post->post_title.'</h3>
+                        <p>'.get_field('sin_job_per',$post->ID).'</p>
+                        <p><span>'.get_field('sin_job_date',$post->ID).'</span></p>
+                    </div>
+                </div>
+';
+
+        $q->next_post();
+    }
+
+    return $ret;
+}
 ?>
