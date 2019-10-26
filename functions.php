@@ -744,7 +744,7 @@ function  faq(){
         if(!empty($post_thumbnail_id)) {
             $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
         }
-        $ret .= '            <div class="card"><div class="card-header" id="heading-'.$post->ID.'">
+        $ret .= '<div class="card"><div class="card-header" id="heading-'.$post->ID.'">
                                         <h2 class="mb-0">
                                             <button type="button" class="collapsed" data-toggle="collapse" data-target="#collapse-'.$post->ID.'"> <span>'.get_field('faq-head',$post->ID).' </span><i class="fa fa-plus"></i></button>
                                         </h2>
@@ -809,67 +809,6 @@ function  team(){
         $q->next_post();
     }
 
-    return $ret;
-}
-/*------------------------------------*\
-	Portfolio Menu
-\*------------------------------------*/
-function backspace_gallery_category(){
-    $taxonomies = get_terms( array(
-        'taxonomy' => 'gallery_category',
-        'hide_empty' => true,
-    ) );
-    $ret = "";
-
-    if ( !empty($taxonomies) ) {
-        foreach( $taxonomies as $category ) {
-            $ret .= '<li class="filter" data-filter=".t'.$category->term_id.'">'.$category->name.'</li>';
-        }
-    }
-    return $ret;
-}
-
-
-
-function backspace_gallery_photos(){
-    $ret = "";
-    $args = array(
-        'post_type' => 'gallery',
-        'orderby' => 'date',
-        'order'   => 'DESC',
-        'posts_per_page' => -1,
-    );
-    $q = new WP_Query($args);
-
-    foreach($q->posts as $post) {
-        $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
-
-        if(!empty($post_thumbnail_id)) {
-            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
-        }
-
-        $gallery_categories = wp_get_post_terms( $post->ID, 'gallery_category' );
-        $str_gallery_category = "";
-        $str_gallery_category_title = "";
-        foreach($gallery_categories as $gallery_category){
-            $str_gallery_category .=  "t".$gallery_category->term_id . " ";
-            $str_gallery_category_title .= $gallery_category->name . ", ";
-        }
-
-        $str_gallery_category_title = rtrim($str_gallery_category_title,", ");
-        $str_gallery_category = rtrim($str_gallery_category," ");
-        $ret .='<div class="col-md-6 web html wordpress app all '.$str_gallery_category.' " data-ref="mixitup-target">
-                        <div class="single-portfolio"  >
-                            <div class="single-portfolio-image">
-                                <img src="'.$featured_img[0].'" alt="img23">
-                            </div>
-                            <div class="single-portfolio-text">
-                                <a href="single-portfolio.html">'.$post->post_title.'<i class="fas fa-angle-double-right ml-auto"></i></a>
-                                <p>'.$str_gallery_category_title.'</p>
-                            </div>
-                        </div>
-                    </div>';
-    }
     return $ret;
 }
 
@@ -940,4 +879,70 @@ function  lookfor(){
 
     return $ret;
 }
+
+/*------------------------------------*\
+	Portfolio Menu
+\*------------------------------------*/
+function backspace_gallery_category(){
+    $taxonomies = get_terms( array(
+        'taxonomy' => 'gallery_category',
+        'hide_empty' => true,
+    ) );
+    $ret = "";
+
+    if ( !empty($taxonomies) ) {
+        foreach( $taxonomies as $category ) {
+            $ret .= '<li class="filter" data-filter=".t'.$category->term_id.'">'.$category->name.'</li>';
+        }
+    }
+    return $ret;
+}
+
+
+
+function backspace_gallery_photos()
+{
+    $ret = "";
+    $args = array(
+        'post_type' => 'gallery',
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'posts_per_page' => -1,
+    );
+    $q = new WP_Query($args);
+
+    foreach ($q->posts as $post) {
+        $post_thumbnail_id = get_post_thumbnail_id($post->ID);
+
+        if (!empty($post_thumbnail_id)) {
+            $featured_img = wp_get_attachment_image_src($post_thumbnail_id, 'full');
+        }
+
+        $gallery_categories = wp_get_post_terms($post->ID, 'gallery_category');
+        $str_gallery_category = "";
+        $str_gallery_category_title = "";
+        foreach ($gallery_categories as $gallery_category) {
+            $str_gallery_category .= "t" . $gallery_category->term_id . " ";
+            $str_gallery_category_title .= $gallery_category->name . ", ";
+        }
+
+        $str_gallery_category_title = rtrim($str_gallery_category_title, ", ");
+        $str_gallery_category = rtrim($str_gallery_category, " ");
+        $ret .= '<div class="col-md-6 web html wordpress app all ' . $str_gallery_category . ' " data-ref="mixitup-target">
+                        <div class="single-portfolio"  >
+                            <div class="single-portfolio-image">
+                                <img src="' . $featured_img[0] . '" alt="img23">
+                            </div>
+                            <div class="single-portfolio-text">
+                                <a href="single-portfolio.html">' . $post->post_title . '<i class="fas fa-angle-double-right ml-auto"></i></a>
+                                <p>' . $str_gallery_category_title . '</p>
+                            </div>
+                        </div>
+                    </div>';
+    }
+    return $ret;
+
+}
+
+
 ?>

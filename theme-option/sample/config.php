@@ -482,6 +482,27 @@ Redux::setSection($opt_name, array(
             )
         ),
         array(
+            'title'     => __('Service Tab area', 'backspace'),
+            'id'        => 'ser-tab-menu',
+            'type'      => 'text',
+            'default'   => 'UI/UX Design'
+        ),
+        array(
+            'title'     => __('Tab Image Upload', 'backspace'),
+            'id'        => 'ser-tab-img',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images/ux-logo.png'
+            )
+            ),
+            array(
+                'title'     => __('Tab Content Upload', 'backspace'),
+                'id'        => 'ser-tab-content',
+                'type'      => 'editor',
+                'default'   => 'Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft’s UI and UX services. Our design team is a small design studio within a large software com.'
+
+        ),
+        array(
             'title'     => __('Upload Image', 'backspace'),
             'id'        => 'crea-2-imag',
             'type'      => 'media',
@@ -553,19 +574,10 @@ Redux::setSection($opt_name, array(
 ));
 
 
+
+
+
 /**********For Theme Option Code End : Ismail Hossain***************/
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

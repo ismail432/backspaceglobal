@@ -1964,6 +1964,148 @@ a.back i {
     background: #fff;
 }
 
+/*============================
+    Single Blog CSS
+============================*/
 
+.main-blog-title {
+    margin-top: 80px;
+    height: 550px;
+    background: url(assets/images/blog-bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main-blog-title:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.main-blog-title h2 {
+    margin-top: 350px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.main-blog-title .post-details li {
+    color: #fff;
+}
+
+.main-blog-title .post-details li b {
+    color: #fff;
+}
+
+.main-blog-sec {
+    padding: 125px 0;
+}
+
+.single-blog {
+    background: #fff;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px #dee2e6;
+    transition: .5s;
+}
+
+.signle-blog-img img {
+    height: 225px;
+    width: 100%;
+}
+
+.single-blog-text {
+    padding: 20px;
+}
+
+.single-blog-text a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    display: block;
+    line-height: 36px;
+}
+
+.post-details li {
+    display: inline-block;
+    padding: 3px;
+    color: #666;
+    font-size: 16px;
+}
+
+.post-details li b {
+    color: #000;
+}
+
+.post-details li i {
+    font-size: 8px;
+}
+
+.read-post-btn {
+    width: 120px;
+    height: 35px;
+    line-height: 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 25px;
+    margin-top: 25px;
+    transition: .5s;
+    text-align: center;
+}
+
+.read-post-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.signle-blog-img {
+    position: relative;
+}
+
+.img-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: auto;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    padding-top: 20%;
+    transition: .3s;
+    transform: scale(0)
+}
+
+.img-hover a {
+    margin: 5px;
+}
+.img-hover a i {
+    margin-right: 10px;
+}
+.share-btn {
+    width: 120px;
+    height: 35px;
+    line-height: 30px;
+    border: 2px solid #fff;
+    color: #000;
+    background: #fff;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 25px;
+    margin-top: 25px;
+    transition: .5s;
+}
+
+.share-btn:hover {
+    background: transparent;
+    color: #fff;
+}
+.single-blog:hover .img-hover {
+
+    transform: scale(1)
+}
 
 

@@ -5,10 +5,11 @@
 
         <!--Banner Area Start-->
         <div class="section banner-sec">
+
             <?php echo banner_words(); ?>
+
                 <div class="container">
                     <div class="row">
-
                         <div class="col-lg-8 col-md-7">
                             <div class="banner-text">
                                 <h1>The Home of World Class</h1>
@@ -140,82 +141,8 @@
                         <div class="accrodion-part">
                             <div class="accordion" id="accordionExample">
 
-
                                     <?php echo faq(); ?>
 
-                                   <!-- <div class="card-header" id="headingOne">
-                                        <h2 class="mb-0">
-                                            <button type="button" class="" data-toggle="collapse" data-target="#collapseOne"> <span>UX Designer </span><i class="fa fa-plus"></i></button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <ul>
-                                                <li>
-                                                    <p>Start-to-finish technical ownership of features and/or applications from inception to delivery.</p>
-                                                </li>
-                                                <li>
-                                                    <p>UI/UX requirements and mockups to build functional, high-perfor mance iOS phone and tablet.</p>
-                                                </li>
-                                                <li>
-                                                    <p>Research the latest technologies, test, implement and report back to the team on what you’ve.</p>
-                                                </li>
-                                            </ul>
-                                            <a href="#" class="apply-btn">Apply Now</a>
-                                            <a href="#" class="more-btn">More Details</a>
-                                        </div>
-                                    </div>-->
-
-
-
-                                <!--<div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                        <h2 class="mb-0">
-                                            <button type="button" class="collapsed" data-toggle="collapse" data-target="#collapseTwo"><span>Business Developer</span><i class="fa fa-plus"></i> </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <ul>
-                                                <li>
-                                                    <p>Start-to-finish technical ownership of features and/or applications from inception to delivery.</p>
-                                                </li>
-                                                <li>
-                                                    <p>UI/UX requirements and mockups to build functional, high-perfor mance iOS phone and tablet.</p>
-                                                </li>
-                                                <li>
-                                                    <p>Research the latest technologies, test, implement and report back to the team on what you’ve.</p>
-                                                </li>
-                                            </ul>
-                                            <a href="#" class="apply-btn">Apply Now</a>
-                                            <a href="#" class="more-btn">More Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingThree">
-                                        <h2 class="mb-0">
-                                            <button type="button" class="collapsed" data-toggle="collapse" data-target="#collapseThree"><span>Senior QA Engineer</span> <i class="fa fa-plus"></i></button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <ul>
-                                                <li>
-                                                    <p>Start-to-finish technical ownership of features and/or applications from inception to delivery.</p>
-                                                </li>
-                                                <li>
-                                                    <p>UI/UX requirements and mockups to build functional, high-perfor mance iOS phone and tablet.</p>
-                                                </li>
-                                                <li>
-                                                    <p>Research the latest technologies, test, implement and report back to the team on what you’ve.</p>
-                                                </li>
-                                            </ul>
-                                            <a href="#" class="apply-btn">Apply Now</a>
-                                            <a href="#" class="more-btn">More Details</a>
-                                        </div>
-                                    </div>
-                                </div>-->
                             </div>
                         </div>
                     </div>

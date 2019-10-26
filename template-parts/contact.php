@@ -28,30 +28,9 @@
             <div class="col-md-6">
                 <div class="contact-form">
                     <h3>We’d love to hear from you</h3>
-                    <form>
 
                         <?php dynamic_sidebar( 'contact' ); ?>
-                        <!--<div class="form-group">
-                            <label for="fullName">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="phoneNumber">Phone Number</label>
-                            <input type="text" class="form-control" id="phoneNumber" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Enter email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Your Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>-->
 
-
-
-                    </form>
                 </div>
             </div>
         </div>
