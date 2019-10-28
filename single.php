@@ -31,7 +31,15 @@
                     <!--sily-text-->
                     <div class="blog-comment d-flex">
                         <div class="blog-user-img">
-                            <img src="<?php print get_avatar_url($user->ID, ['size' => '60']); ?>" alt="women">
+
+                            <?php
+                            $user = wp_get_current_user();
+
+                            if ( $user ) :
+                                ?>
+                                <img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" />
+                            <?php endif; ?>
+
                         </div>
                         <div class="blog-user">
                             <p><span>By</span> <?php the_author(); ?> <span>In</span> <?php the_category(); ?> <span>Posted</span> <?php the_time('M d,Y'); ?></p>
@@ -101,7 +109,13 @@
                             <div class="blog-text-area">
                                 <div class="comment-user d-flex justify-content-start">
                                     <div class="comment-user-img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/women-small.png" alt="women">
+                                        <?php
+                                        $user = wp_get_current_user();
+
+                                        if ( $user ) :
+                                            ?>
+                                            <img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" />
+                                        <?php endif; ?>
                                     </div>
                                     <div class="comment-label">
                                         <label for="comment">John Doe</label>
@@ -121,7 +135,13 @@
                             <div class="blog-text-area">
                                 <div class="comment-user d-flex justify-content-start">
                                     <div class="comment-user-img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/women-small.png" alt="women">
+                                        <?php
+                                        $user = wp_get_current_user();
+
+                                        if ( $user ) :
+                                            ?>
+                                            <img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" />
+                                        <?php endif; ?>
                                     </div>
                                     <div class="comment-label">
                                         <label for="comment">John Doe</label>
@@ -148,7 +168,15 @@
                             <div class="blog-text-area blog-com-area-last">
                                 <div class="comment-user d-flex justify-content-start">
                                     <div class="comment-user-img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/women-small.png" alt="women">
+
+                                        <?php
+                                        $user = wp_get_current_user();
+
+                                        if ( $user ) :
+                                       ?>
+                                            <img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" />
+                                        <?php endif; ?>
+
                                     </div>
                                     <div class="comment-label">
                                         <label for="comment">John Doe</label>

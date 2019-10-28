@@ -1462,7 +1462,9 @@ a.back i {
 .blog-comment {
     margin-top: 40px;
 }
-
+.blog-user-img img {
+    border-radius: 50%;
+}
 .blog-user {
     margin: 15px 0 0 15px;
 }
@@ -2108,4 +2110,16 @@ a.back i {
     transform: scale(1)
 }
 
-
+/*Visual Editor css*/
+.vc_section[data-vc-stretch-content] {
+    padding-left: 0;
+    padding-right: 0;
+    width: 1140px;
+    margin: 0 auto;
+}
+section#blog-banner {
+    height: 500px;
+}
+div#socail-icon img {
+    width: 24%;
+}
