@@ -92,116 +92,15 @@
                     </p>
 
                     <div class="de-br-ar d-flex justify-content-center">
-                        <ul>
-                            <li><a href="">Design</a></li>
-                            <li><a href="">Branding</a></li>
-                            <li><a href="">Art</a></li>
-                        </ul>
+                        <?php the_category(); ?>
                     </div>
 
                     <hr>
 
-                    <div class="comment area">
-                        <h6>2 Comments</h6>
+                    <div class="comment-area">
+                        <?php comments_template( '', true ); ?>
                     </div>
-                    <div class="blog-form">
-                        <form>
-                            <div class="blog-text-area">
-                                <div class="comment-user d-flex justify-content-start">
-                                    <div class="comment-user-img">
-                                        <?php
-                                        $user = wp_get_current_user();
 
-                                        if ( $user ) :
-                                            ?>
-                                            <img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" />
-                                        <?php endif; ?>
-                                    </div>
-                                    <div class="comment-label">
-                                        <label for="comment">John Doe</label>
-                                    </div>
-                                    <div class="dot"></div>
-                                    <div class="comment-time">
-                                        <span>Right now</span>
-                                    </div>
-
-                                </div>
-                                <textarea class="form-control"></textarea>
-                                <div class="post-btn d-flex justify-content-end">
-                                    <a href="" class="btn">Post</a>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="blog-text-area">
-                                <div class="comment-user d-flex justify-content-start">
-                                    <div class="comment-user-img">
-                                        <?php
-                                        $user = wp_get_current_user();
-
-                                        if ( $user ) :
-                                            ?>
-                                            <img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" />
-                                        <?php endif; ?>
-                                    </div>
-                                    <div class="comment-label">
-                                        <label for="comment">John Doe</label>
-                                    </div>
-                                    <div class="dot"></div>
-                                    <div class="comment-time">
-                                        <span>12/04/2019 at 12:45am</span>
-                                    </div>
-                                </div>
-                                <div class="comment-content">
-                                    <p>One of the details that 'A Christmas Story' gets right is the threat of having your mouth washed out with Lifebuoy soap. Not any soap. Lifebuoy. </p>
-                                    <div class="replay-share-area d-flex">
-                                        <div class="re-sh-item"> <a href=""><i class="fas fa-angle-up"></i></a></div>
-                                        <div class="re-sh-item"><span>|</span></div>
-                                        <div class="re-sh-item"><a href=""><i class="fas fa-angle-down"></i></a></div>
-                                        <div class="re-sh-item"><span><a href="">Reply</a></span></div>
-                                        <div class="re-sh-item"><span><a href="">Share</a></span></div>
-                                        <div class="re-sh-item"><a href=""><i class="fas fa-angle-right"></i></a></div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="blog-text-area blog-com-area-last">
-                                <div class="comment-user d-flex justify-content-start">
-                                    <div class="comment-user-img">
-
-                                        <?php
-                                        $user = wp_get_current_user();
-
-                                        if ( $user ) :
-                                       ?>
-                                            <img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" />
-                                        <?php endif; ?>
-
-                                    </div>
-                                    <div class="comment-label">
-                                        <label for="comment">John Doe</label>
-                                    </div>
-                                    <div class="dot"></div>
-                                    <div class="comment-time">
-                                        <span>12/04/2019 at 12:45am</span>
-                                    </div>
-                                </div>
-                                <div class="comment-content">
-                                    <p>One of the details that 'A Christmas Story' gets right is the threat of having your mouth washed out with Lifebuoy soap. Not any soap. Lifebuoy. </p>
-                                    <div class="replay-share-area d-flex">
-                                        <div class="re-sh-item"> <a href=""><i class="fas fa-angle-up"></i></a></div>
-                                        <div class="re-sh-item"><span>|</span></div>
-                                        <div class="re-sh-item"><a href=""><i class="fas fa-angle-down"></i></a></div>
-                                        <div class="re-sh-item"><span><a href="">Reply</a></span></div>
-                                        <div class="re-sh-item"><span><a href="">Share</a></span></div>
-                                        <div class="re-sh-item"><a href=""><i class="fas fa-angle-right"></i></a></div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                        </form>
-                    </div>
                 <?php endwhile; else : ?>
 
                     <p><?php esc_html_e('Sorry, no posts matched  your criteria.'); ?></p>

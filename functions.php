@@ -203,6 +203,8 @@ function backspace_styles()
     wp_register_style('responsive', get_template_directory_uri() . '/assets/css/responsive.css', array(), '1.0', 'all');
     wp_enqueue_style('responsive'); // Enqueue it!
 
+    
+
 }
 
 // Register HTML5 Blank Navigation
@@ -934,7 +936,7 @@ function backspace_gallery_photos()
                                 <img src="' . $featured_img[0] . '" alt="img23">
                             </div>
                             <div class="single-portfolio-text">
-                                <a href="single-portfolio.html">' . $post->post_title . '<i class="fas fa-angle-double-right ml-auto"></i></a>
+                                <a target="_blank" href="'. get_permalink($post->ID) .'">' . $post->post_title . '<i class="fas fa-angle-double-right ml-auto" ></i> </a>
                                 <p>' . $str_gallery_category_title . '</p>
                             </div>
                         </div>

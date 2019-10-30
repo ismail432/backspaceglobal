@@ -18,7 +18,7 @@
     <div class="po-head">
         <h5>Popular Post</h5>
     </div>
-    <div class="post-item">
+
         <?php
         $backrecent = new WP_Query(array(
 
@@ -33,17 +33,22 @@
 
         if (have_posts()) : while( $backrecent-> have_posts()) : $backrecent-> the_post(); ?>
 
-        <div class="post-img">
-            <a href="#"> <?php the_post_thumbnail('small', array('class' => 'post-thumb')); ?></a>
-        </div>
-        <div class="post-text">
-            <h6><?php the_title(); ?></h6>
-            <p><?php the_time('M d,Y'); ?></p>
+        <div class="popular-post-widget">
+            <div class="post-img">
+                <a href="#"> <?php the_post_thumbnail('small', array('class' => 'post-thumb')); ?></a>
+            </div>
+            <div class="post-text">
+                <h6><?php the_title(); ?></h6>
+                <p><?php the_time('M d,Y'); ?></p>
+            </div>
+
         </div>
         <?php endwhile; ?>
         <?php endif; ?>
 
-    </div>
+
+
+
 
 </div>
 <div class="post-area">
