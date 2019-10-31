@@ -1,7 +1,7 @@
 <?php
 /*
- *  Author: Todd Motto | @toddmotto
- *  URL: html5blank.com | @html5blank
+ *  Author: Todd Motto | @backspace
+ *  URL: backspaceglobal.com |
  *  Custom functions, support, custom post types and more.
  */
 
@@ -65,14 +65,14 @@ if (function_exists('add_theme_support'))
     add_theme_support('automatic-feed-links');
 
     // Localisation Support
-    load_theme_textdomain('html5blank', get_template_directory() . '/languages');
+    load_theme_textdomain('backspace', get_template_directory() . '/languages');
 }
 
 /*------------------------------------*\
 	Functions
 \*------------------------------------*/
 
-// HTML5 Blank navigation
+// Backspace navigation
 function backspace_nav()
 {
     $menu = wp_nav_menu(
@@ -116,20 +116,12 @@ function copyright_first()
 }
 
 
-// Load HTML5 Blank scripts (header.php)
+// Load Backspace scripts (header.php)
 function backspace_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
 
-    /*	wp_register_script('conditionizr', get_template_directory_uri() . '/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0'); // Conditionizr
-        wp_enqueue_script('conditionizr'); // Enqueue it!
 
-        wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
-        wp_enqueue_script('modernizr'); // Enqueue it!
-
-        wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
-        wp_enqueue_script('html5blankscripts'); // Enqueue it!
-    */
         wp_register_script('jqueryslim', get_template_directory_uri() . '/assets/js/jquery-3.3.1.slim.min.js', array(), '3.1.3','true'); // Conditionizr
         wp_enqueue_script('jqueryslim'); // Enqueue it!
         wp_register_script('scroll-jquery', get_template_directory_uri() . '/assets/js/scroll-jquery.js', array(), '1.1.0','true'); // Conditionizr
@@ -159,8 +151,8 @@ function backspace_scripts()
     }
 }
 
-// Load HTML5 Blank conditional scripts
-function html5blank_conditional_scripts()
+// Load backspace  conditional scripts
+function backspace_conditional_scripts()
 {
     if (is_page('pagenamehere')) {
         wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
@@ -170,7 +162,7 @@ function html5blank_conditional_scripts()
 
 }
 
-// Load HTML5 Blank styles
+// Load backspace Blank styles
 function backspace_styles()
 {
    /* wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
@@ -207,7 +199,7 @@ function backspace_styles()
 
 }
 
-// Register HTML5 Blank Navigation
+// Register backspace  Navigation
 function register_backspace_menu()
 {
     if (function_exists('register_nav_menu')){
@@ -260,8 +252,8 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
-        'name' => __('Footer First', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Footer First', 'backspace'),
+        'description' => __('Description for this widget-area...', 'backspace'),
         'id' => 'footer-first',
         'before_widget' => '',
         'after_widget' => '',
@@ -271,8 +263,8 @@ if (function_exists('register_sidebar'))
 
     // Define Sidebar Widget Area 2
     register_sidebar(array(
-        'name' => __('Footer second area', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Footer second area', 'backspace'),
+        'description' => __('Description for this widget-area...', 'backspace'),
         'id' => 'footer-second',
         'before_widget' => '<div class="col-lg-3 col-md-4 col-xs-6"> <div class="footer-single second-footer-part">',
         'after_widget' => '</div></div>',
@@ -281,8 +273,8 @@ if (function_exists('register_sidebar'))
     ));
     // Define Sidebar Widget Area 3
     register_sidebar(array(
-        'name' => __('Footer third area', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Footer third area', 'backspace'),
+        'description' => __('Description for this widget-area...', 'backspace'),
         'id' => 'footer-third',
         'before_widget' => '<div class="col-md-5 col-lg-4">  <div class="footer-single third-footer-part">',
         'after_widget' => '</div></div>',
@@ -292,8 +284,8 @@ if (function_exists('register_sidebar'))
 
     // Define Sidebar Widget Area 4
     register_sidebar(array(
-        'name' => __('Sidebar first area', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Sidebar first area', 'backspace'),
+        'description' => __('Description for this widget-area...', 'backspace'),
         'id' => 'categories',
         'before_widget' => ' <div class="catagories">',
         'after_widget' => '</div>',
@@ -303,8 +295,8 @@ if (function_exists('register_sidebar'))
 
     // Define Sidebar Widget Area 4
     register_sidebar(array(
-        'name' => __('Sidebar last area', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Sidebar last area', 'backspace'),
+        'description' => __('Description for this widget-area...', 'backspace'),
         'id' => 'instagram',
         'before_widget' => '<div class="justify-content-between">',
         'after_widget' => '</div>',
@@ -313,8 +305,8 @@ if (function_exists('register_sidebar'))
     ));
     // Define Sidebar Widget Area 4
     register_sidebar(array(
-        'name' => __('Contact form area', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Contact form area', 'backspace'),
+        'description' => __('Description for this widget-area...', 'backspace'),
         'id' => 'contact',
         'before_widget' => '',
         'after_widget' => '',
@@ -336,7 +328,7 @@ function my_remove_recent_comments_style()
 }
 
 // Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
-function html5wp_pagination()
+function backspace_wp_pagination()
 {
     global $wp_query;
     $big = 999999999;
@@ -477,13 +469,13 @@ function html5blankcomments($comment, $args, $depth)
 
 // Add Actions
 add_action('init', 'backspace_scripts'); // Add Custom Scripts to wp_head
-add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
+add_action('wp_print_scripts', 'backspace_conditional_scripts'); // Add Conditional Page Scripts
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'backspace_styles'); // Add Theme Stylesheet
-add_action('init', 'register_backspace_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+add_action('init', 'register_backspace_menu'); // Add backspace Blank Menu
+add_action('init', 'create_post_type_html5'); // Add our backspace Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
-add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
+add_action('init', 'backspace_wp_pagination'); // Add our backspace Pagination
 
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
@@ -531,43 +523,6 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 	Custom Post Types
 \*------------------------------------*/
 
-// Create 1 Custom Post type for a Demo, called HTML5-Blank
-function create_post_type_html5()
-{
-    register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'html5-blank');
-    register_post_type('html5-blank', // Register Custom Post Type
-        array(
-        'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
-        ),
-        'public' => true,
-        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
-        'has_archive' => true,
-        'supports' => array(
-            'title',
-            'editor',
-            'excerpt',
-            'thumbnail'
-        ), // Go to Dashboard Custom HTML5 Blank post for supports
-        'can_export' => true, // Allows export in Tools > Export
-        'taxonomies' => array(
-            'post_tag',
-            'category'
-        ) // Add Category and Post Tags support
-    ));
-}
 
 /*------------------------------------*\
 	ShortCode Functions
@@ -754,8 +709,8 @@ function  faq(){
                                     <div id="collapse-'.$post->ID.'" class="collapse '.$tmp_switcher.'" aria-labelledby="heading-'.$post->ID.'" data-parent="#accordionExample">
                                         <div class="card-body">
                                           '.get_field('faq-content',$post->ID).'
-                                            <a href="#" class="apply-btn">'.get_field('faq-first-btn',$post->ID).'</a>
-                                            <a href="#" class="more-btn">'.get_field('faq-second-btn',$post->ID).'</a>
+                                            <a target="_blank" href="http://backspaceglobal.com/carrier/" class="apply-btn">'.get_field('faq-first-btn',$post->ID).'</a>
+                                            <a target="_blank" href="http://backspaceglobal.com/carrier/" class="more-btn">'.get_field('faq-second-btn',$post->ID).'</a>
                                         </div>
                                         </div>
                                     </div>';
@@ -867,8 +822,8 @@ function  lookfor(){
         if(!empty($post_thumbnail_id)) {
             $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
         }
-        $ret .= ' <div class="col-md-4">
-                    <div class="single-job" style="background: url('.$featured_img[0].')">
+        $ret .= ' <div class="col-md-4"> 
+                    <div class="single-job" onmouseover="this.style.background = \'url('.$featured_img[0].'\';" onmouseout="this.style.background = \'#f4f5f8\';">
                         <h3>'.$post->post_title.'</h3>
                         <p>'.get_field('sin_job_per',$post->ID).'</p>
                         <p><span>'.get_field('sin_job_date',$post->ID).'</span></p>

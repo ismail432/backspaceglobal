@@ -28,7 +28,7 @@
             <div class="col-md-7 offset-md-1">
                 <div class="portfolio-main-text">
                     <h2><?php the_title();?></h2>
-                    <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus vel. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus vel sit nam.</p>
+                   <?php the_content(); ?>
                     <span><i class="fa fa-heart-o"></i>5</span>
                 </div>
             </div>

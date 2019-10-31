@@ -15,7 +15,7 @@
                                 <h1>The Home of World Class</h1>
                                 <span id="text"></span>
                                 <div class="underscore" id="console">&#95;</div>
-                                <h3>Check out some of our <a href="#">latest projects</a></h3>
+                                <h3>Check out some of our <a href="<?php echo get_permalink( get_page_by_path( 'portfolio' ) ) ?>">latest projects</a></h3>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-5">
@@ -27,9 +27,9 @@
                 </div>
                 <div class="banner-social">
                     <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.facebook.com/backspaceglobal/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
                         <li><span></span></li>
                     </ul>
                 </div>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="col-md-12">
                         <div class="all-services">
-                            <a href="#">All Services</a>
+                            <a href="<?php echo get_permalink( get_page_by_path( 'services' ) ) ?>">All Services</a>
                         </div>
                     </div>
                 </div>
@@ -73,10 +73,11 @@
                         <div class="brand-title">
                             <h2>Experience development for growing brands</h2>
                             <div class="hiring-btn brand-btn">
-                                <a href="#">Got a new project? <span>Contact us</span></a>
+                                <span>Got a new project?</span>
+                                <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ) ?>">Contact us</a>
                             </div>
                             <div class="dots-icon">
-                                <a href="portfolio.html"><i class="fa fa-th" aria-hidden="true"></i></a>
+                                <a href="<?php echo get_permalink( get_page_by_path( 'portfolio' ) ) ?>"><i class="fa fa-th" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -105,7 +106,7 @@
                     </div>
                     <div class="col-lg-6 col-md-7">
                         <div class="contact-btn">
-                            <a href="#">Contact Us</a>
+                            <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ) ?>">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -133,7 +134,7 @@
                                 Most Creative 
                                 Team</h2>
                             <div class="hiring-btn">
-                                <a href="#">We Are Hiring <span>Career</span></a>
+                                <a href="<?php echo get_permalink( get_page_by_path( 'career' ) ) ?>">We Are Hiring <span>Career</span></a>
                             </div>
                         </div>
                     </div>

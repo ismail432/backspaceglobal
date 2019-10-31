@@ -62,10 +62,10 @@
                                 <a class="nav-link flex-fill active" data-toggle="tab" href="#home"><img src="<?php global $backspace; echo $backspace['ser-tab-img']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu'];  ?></a>
                             </li>
                             <li class="nav-item flex-fill">
-                                <a class="nav-link" data-toggle="tab" href="#menu1"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/www-logo.png" alt="Photo">Web Development</a>
+                                <a class="nav-link" data-toggle="tab" href="#menu1"><img src="<?php global $backspace; echo $backspace['ser-tab-img-2']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu-2'];  ?></a>
                             </li>
                             <li class="nav-item flex-fill">
-                                <a class="nav-link" data-toggle="tab" href="#menu2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/app-logo.png" alt="Photo">App Development</a>
+                                <a class="nav-link" data-toggle="tab" href="#menu2"><img src="<?php global $backspace; echo $backspace['ser-tab-img-3']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu-3'];  ?></a>
                             </li>
                         </ul>
 
@@ -84,32 +84,20 @@
                             <div id="menu1" class="container tab-pane fade"><br>
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <h2>Web <br>Development</h2>
+                                        <h2><?php global $backspace; echo $backspace['ser-tab-menu-2'];  ?></h2>
                                     </div>
                                     <div class="col-md-8">
-                                        <p>Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft’s UI and UX services. Our design team is a small design studio within a large software com. </p>
-                                        <ul>
-                                            <li><a href="#"><i class="fas fa-check"></i> Web Design</a></li>
-                                            <li><a href="#"><i class="fas fa-check"></i> Mobile App Design (Android/iOS)</a></li>
-                                            <li><a href="#"><i class="fas fa-check"></i> Theme Design</a></li>
-                                        </ul>
-                                        <a href="#" class="view">View Project</a>
+                                        <?php global $backspace; echo $backspace['ser-tab-content-2'];  ?>
                                     </div>
                                 </div>
                             </div>
                             <div id="menu2" class="container tab-pane fade"><br>
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <h2>App <br>Development</h2>
+                                        <h2><?php global $backspace; echo $backspace['ser-tab-menu-3'];  ?></h2>
                                     </div>
                                     <div class="col-md-8">
-                                        <p>Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft’s UI and UX services. Our design team is a small design studio within a large software com. </p>
-                                        <ul>
-                                            <li><a href="#"><i class="fas fa-check"></i> Web Design</a></li>
-                                            <li><a href="#"><i class="fas fa-check"></i> Mobile App Design (Android/iOS)</a></li>
-                                            <li><a href="#"><i class="fas fa-check"></i> Theme Design</a></li>
-                                        </ul>
-                                        <a href="#" class="view">View Project</a>
+                                        <?php global $backspace; echo $backspace['ser-tab-content-3'];  ?>
                                     </div>
                                 </div>
                             </div>

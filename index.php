@@ -6,15 +6,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Put a new spin on your gift giving</h2>
-                    <div class="post-details">
-                        <ul>
-                            <li>Posted by <b>Admin</b></li>
-                            <li><i class="fa fa-circle" aria-hidden="true"></i></li>
-                            <li>3 Hours ago</li>
-                        </ul>
-                    </div>
-                    <a href="single-blog.html" class="read-post-btn">Read Post</a>
+
+                    <?php
+                    $backpopular = new WP_Query(array(
+
+                        'post_type' => 'post',
+                        'year' => 2019,
+                        'month' => 9
+
+                    ));
+
+                    if (have_posts()) : while( $backpopular-> have_posts()) : $backpopular-> the_post(); ?>
+
+                        <h2><?php the_title(); ?></h2>
+                        <div class="post-details">
+                            <ul>
+                                <li>Posted by <b><?php the_author(); ?></b></li>
+                                <li><i class="fa fa-circle" aria-hidden="true"></i></li>
+                                <li><?php the_time('M d,Y'); ?></li>
+                            </ul>
+                        </div>
+                        <a target="_blank" href="<?php the_permalink(); ?>" class="read-post-btn">Read Post</a>
+
+
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+
                 </div>
             </div>
         </div>
@@ -29,7 +46,7 @@
 
 
 
-<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+                   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
                 <div class="col-lg-4 col-md-6">
                     <div class="single-blog">
@@ -56,13 +73,22 @@
                     </div>
                 </div>
 
-<?php endwhile; else : ?>
+                <?php endwhile; else : ?>
 
-    <p><?php esc_html_e('Sorry, no posts matched  your criteria.'); ?></p>
+                    <p><?php esc_html_e('Sorry, no posts matched  your criteria.'); ?></p>
 
-<?php endif; ?>
+                <?php endif; ?>
 
 
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Pagination</h2>
+                <?php the_posts_pagination(); ?>
             </div>
         </div>
     </div>

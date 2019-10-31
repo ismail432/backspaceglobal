@@ -13,7 +13,7 @@
     $opt_name = "backspace";
 
     // This line is only for altering the demo. Can be easily removed.
-    $opt_name = apply_filters( 'redux_demo/opt_name', $opt_name );
+    $opt_name = apply_filters( 'backspace/opt_name', $opt_name );
 
     /*
      *
@@ -115,7 +115,7 @@
         // Force your panel to always open to a specific tab (by id)
         'page_icon'            => 'icon-themes',
         // Icon displayed in the admin panel next to your menu_title
-        'page_slug'            => 'redux_demo',
+        'page_slug'            => 'theme-option',
         // Page slug used to denote the panel, will be based off page title then menu title then opt_name if not provided
         'save_defaults'        => true,
         // On load save the defaults to DB before user clicks save or not
@@ -482,7 +482,7 @@ Redux::setSection($opt_name, array(
             )
         ),
         array(
-            'title'     => __('Service Tab area', 'backspace'),
+            'title'     => __('Service Tab Menu', 'backspace'),
             'id'        => 'ser-tab-menu',
             'type'      => 'text',
             'default'   => 'UI/UX Design'
@@ -500,6 +500,48 @@ Redux::setSection($opt_name, array(
                 'id'        => 'ser-tab-content',
                 'type'      => 'editor',
                 'default'   => 'Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft’s UI and UX services. Our design team is a small design studio within a large software com.'
+
+        ),
+        array(
+            'title'     => __('Service Tab Menu-2', 'backspace'),
+            'id'        => 'ser-tab-menu-2',
+            'type'      => 'text',
+            'default'   => 'Web Development'
+        ),
+        array(
+            'title'     => __('Tab Image Upload-2', 'backspace'),
+            'id'        => 'ser-tab-img-2',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images/ux-logo.png'
+            )
+        ),
+        array(
+            'title'     => __('Tab Content Upload-2', 'backspace'),
+            'id'        => 'ser-tab-content-2',
+            'type'      => 'editor',
+            'default'   => 'Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft’s UI and UX services. Our design team is a small design studio within a large software com.'
+
+        ),
+        array(
+            'title'     => __('Service Tab Menu-3', 'backspace'),
+            'id'        => 'ser-tab-menu-3',
+            'type'      => 'text',
+            'default'   => 'Web Development'
+        ),
+        array(
+            'title'     => __('Tab Image Upload-3', 'backspace'),
+            'id'        => 'ser-tab-img-3',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images/ux-logo.png'
+            )
+        ),
+        array(
+            'title'     => __('Tab Content Upload-3', 'backspace'),
+            'id'        => 'ser-tab-content-3',
+            'type'      => 'editor',
+            'default'   => 'Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft’s UI and UX services. Our design team is a small design studio within a large software com.'
 
         ),
         array(
