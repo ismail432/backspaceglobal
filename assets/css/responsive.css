@@ -140,11 +140,21 @@
     nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
         line-height: 60px;
     }
-
+    .train-textarea h2 {
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .sily-text h2 {
+        font-size: 22px;
+        line-height: 44px;
+    }
     div#navbarSupportedContent {
         background: #fff;
+        border-top: 2px solid #f8f8f8;
     }
-
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
+        height: auto;
+    }
     .nav-right-side li {
         border-left: 0;
         border-right: 1px solid #c8c8c8;
@@ -416,13 +426,9 @@
         margin-bottom: 40px;
     }
 
-    .neque-img {
-        width: 65%;
-    }
 
-    .neque-text {
-        width: 35%;
-    }
+
+
 
     .neque-img img {
         width: 100%;
@@ -473,6 +479,17 @@
     }
     .service-slider .owl-nav {
         bottom: -115px;
+    }
+    .footer-single.first-footer-part img {
+        width: 100%;
+        margin-bottom: 35px;
+
+    }
+    ul#menu-footer-first-menu li a {
+        display: inline-flex;
+    }
+    .footer-sec a {
+        font-size: 14px;
     }
 }
 
@@ -755,6 +772,7 @@
 
     .footer-sec h3 {
         font-size: 20px;
+
         margin: 25px 10px;
     }
 
@@ -1114,7 +1132,8 @@
     }
 
     .sily-text h2 {
-        font-size: 35px;
+        font-size: 22px;
+        line-height: 44px;
     }
 
     .insta-second-item {
@@ -1160,6 +1179,37 @@
     }
     .service-slider .owl-nav {
         display: none !important;
+    }
+    .navbar-brand img {
+        height: 40px;
+        width: 40px;
+    }
+    .train-textarea h2 {
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .catg-search .fa {
+        right: 35px;
+    }
+    ul.post-categories li {
+        float: inherit;
+    }
+    .blog-user {
+        display: initial;
+    }
+    ul.post-categories {
+        margin: 15px 0px;
+    }
+    .main-blog-title h2 {
+        margin-top: 165px;
+        font-size: 22px;
+        line-height: 44px;
+    }
+    .main-blog-title {
+        margin-top: 0;
+    }
+.portfolio-slider  .owl-next {
+        display: none;
     }
 }
 
@@ -1230,6 +1280,33 @@
 
     .sily-text h2 {
         font-size: 28px;
+    }
+    .sily-text h2 {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .sily-area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .main-blog-sec {
+        padding: 50px 0;
+    }
+    .main-blog-title h2 {
+        margin-top: 165px;
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .main-blog-title {
+        height: 440px;
+
+    }
+    .single-blog-text a {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .portfolio-slider  .owl-next {
+        display: none;
     }
 }
 

@@ -23,7 +23,7 @@
         $backrecent = new WP_Query(array(
 
             'post_type'       => 'post',
-            'posts_per_page' => 4,
+            'posts_per_page' => 5,
             'orderby'        => 'title',
             'order'           => 'DESC',
             'category_name'  => 'Dollar'
@@ -35,7 +35,7 @@
 
         <div class="popular-post-widget">
             <div class="post-img">
-                <a href="#"> <?php the_post_thumbnail('small', array('class' => 'post-thumb')); ?></a>
+                <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('small', array('class' => 'post-thumb')); ?></a>
             </div>
             <div class="post-text">
                 <h6><?php the_title(); ?></h6>

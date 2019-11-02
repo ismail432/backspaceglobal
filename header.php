@@ -8,6 +8,7 @@
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/logo_black_OlN_icon.ico" rel="shortcut icon">
 
 
+
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
@@ -28,7 +29,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <?php backspace_nav(); ?>
 
                         <form class="form-inline my-2 my-lg-0">
@@ -38,7 +39,10 @@
                                 <li class="search"><a href="#"><i class="fas fa-search"></i></a></li>
                             </ul>
                         </form>
-
+                    </div>
                 </nav>
             </header>
             <!--Header Area End-->
+
+
+

@@ -38,4 +38,4 @@
 </div>
 <!--Contact Area End-->
 
-
+<?php get_footer(); ?>

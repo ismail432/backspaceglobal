@@ -11,6 +11,7 @@
                     $backpopular = new WP_Query(array(
 
                         'post_type' => 'post',
+                        'posts_per_page' => 1,
                         'year' => 2019,
                         'month' => 9
 

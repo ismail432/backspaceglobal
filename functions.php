@@ -80,8 +80,8 @@ function backspace_nav()
             'theme_location'  => 'header_top_menu',
             'menu'            => '',
             'container'       => 'div',
-            'container_class' => 'collapse navbar-collapse',
-            'container_id'    => 'navbarSupportedContent',
+            'container_class' => '',
+            'container_id'    => 't',
             'menu_class'      => 'Main menu navbar-nav mr-auto',
             'menu_id'         => 'false',
             'echo'            => false,
@@ -90,7 +90,7 @@ function backspace_nav()
             'after'           => '',
             'link_before'     => '',
             'link_after'      => '',
-            'items_wrap'      => '<div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav mr-auto">%3$s</ul></div>',
+            'items_wrap'      => '<ul class="navbar-nav mr-auto">%3$s</ul>',
             'depth'           => 0,
             'walker'          => ''
         )
