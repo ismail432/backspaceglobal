@@ -19,7 +19,7 @@
 
                     if (have_posts()) : while( $backpopular-> have_posts()) : $backpopular-> the_post(); ?>
 
-                        <h2><?php the_title(); ?></h2>
+                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                         <div class="post-details">
                             <ul>
                                 <li>Posted by <b><?php the_author(); ?></b></li>
@@ -52,7 +52,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-blog">
                         <div class="signle-blog-img">
-                            <?php the_post_thumbnail('custom-size', array('class' => 'post-thumb')); ?>
+                            <?php the_post_thumbnail('blog-img', array('class' => 'post-thumb')); ?>
                             <div class="img-hover">
                                 <div class="bttn-area">
                                     <a href="<?php the_permalink(); ?>" class="share-btn">Read Post</a>

@@ -23,8 +23,8 @@
     $(".brand-slider").owlCarousel({
         nav: true,
         navText: [
-            "<img src='assets/images/big-arrow-left.png'>",
-            "<img src='assets/images/big-arrow-right.png'>"
+            "<img src='"+ $("meta[keyword='image_portfolio_slider_NavText']").attr("content")+"'>",
+            "<img src='"+ $("meta[keyword='image_portfolio_slider_NavText2']").attr("content")+"'>"
         ],
         loop: true,
         dots: true,
@@ -79,11 +79,11 @@
     $(".review-slider").owlCarousel({
         nav: true,
         navText: [
-            "<img src='assets/images/big-arrow-left.png'>",
-            "<img src='assets/images/big-arrow-right.png'>"
+            "<img src='"+ $("meta[keyword='image_portfolio_slider_NavText']").attr("content")+"'>",
+            "<img src='"+ $("meta[keyword='image_portfolio_slider_NavText2']").attr("content")+"'>"
         ],
         loop: true,
-        dots: true,
+        dots: false,
         margin: 15,
         autoplay: false,
         responsive: {
@@ -107,8 +107,8 @@
     $(".portfolio-slider").owlCarousel({
         nav: true,
         navText: [
-            "<img src='assets/images/big-arrow-left.png'>",
-            "<img src='assets/images/big-arrow-right.png'>"
+            "<img src='"+ $("meta[keyword='image_portfolio_slider_NavText']").attr("content")+"'>",
+            "<img src='"+ $("meta[keyword='image_portfolio_slider_NavText2']").attr("content")+"'>"
         ],
         loop: true,
         dots: true,
@@ -136,8 +136,8 @@
     $(".meet-slider").owlCarousel({
         nav: true,
         navText: [
-            "<img src='assets/images/big-arrow-left.png'>",
-            "<img src='assets/images/big-arrow-right.png'>"
+            "<img src='"+ $("meta[keyword='image_portfolio_slider_NavText']").attr("content")+"'>",
+            "<img src='"+ $("meta[keyword='image_portfolio_slider_NavText2']").attr("content")+"'>"
         ],
         loop: true,
         dots: true,

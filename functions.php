@@ -5,6 +5,14 @@
  *  Custom functions, support, custom post types and more.
  */
 
+add_action( 'wp_head', 'slider_img' );
+
+function slider_img() {
+    echo '<meta keyword="image_portfolio_slider_NavText" content="'.get_template_directory_uri() . '/assets/images/big-arrow-left.png'.'" />';
+    echo '<meta keyword="image_portfolio_slider_NavText2" content="'.get_template_directory_uri() . '/assets/images/big-arrow-right.png'.'" />';
+}
+
+
 /*------------------------------------*\
 	External Modules/Files
 \*------------------------------------*/
@@ -41,6 +49,13 @@ if (function_exists('add_theme_support'))
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
     add_image_size('custom-size', 500, 300, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('ser-img', 198, 198, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('brand-img', 500, 750, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('review-img', 500, 750, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('team-img', 350, 350, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('port-img', 827, 740, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('meet-img', 724, 483, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('blog-img', 500, 300, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
@@ -585,7 +600,7 @@ function  backsp_service(){
 
         $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
         if(!empty($post_thumbnail_id)) {
-            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'ser-img' );
         }
         $ret .= '<div class="service-item">
                      <div class="service-image">
@@ -625,7 +640,7 @@ function  brands(){
 
         $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
         if(!empty($post_thumbnail_id)) {
-            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'brand-img' );
         }
         $ret .= '<div class="brand-item">
                                 <div class="brand-image">
@@ -661,7 +676,7 @@ function  reviews(){
 
         $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
         if(!empty($post_thumbnail_id)) {
-            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'review-img' );
         }
         $ret .= '  <div class="review-item">
                         <div class="review-image">
@@ -745,7 +760,7 @@ function  team(){
 
         $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
         if(!empty($post_thumbnail_id)) {
-            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'team-img' );
         }
         $designations = wp_get_post_terms( $post->ID, 'designation' );
         $print_designation = "";
@@ -787,7 +802,7 @@ function  meetslider(){
 
         $post_thumbnail_id = get_post_thumbnail_id( $post->ID );
         if(!empty($post_thumbnail_id)) {
-            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+            $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'meet-img' );
         }
         $ret .= '<div class="meet-item">
             <div class="meet-image">
@@ -872,7 +887,7 @@ function backspace_gallery_photos()
         $post_thumbnail_id = get_post_thumbnail_id($post->ID);
 
         if (!empty($post_thumbnail_id)) {
-            $featured_img = wp_get_attachment_image_src($post_thumbnail_id, 'full');
+            $featured_img = wp_get_attachment_image_src($post_thumbnail_id, 'port-img');
         }
 
         $gallery_categories = wp_get_post_terms($post->ID, 'gallery_category');

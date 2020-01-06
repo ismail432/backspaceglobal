@@ -476,7 +476,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
     display: block !important;
     position: absolute;
     left: -55%;
-    bottom: 32%;
+    bottom: 21%;
 }
 
 .brand-slider .owl-nav img {
@@ -1269,8 +1269,8 @@ a.back i {
 }
 
 .single-job:hover {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
     color: #fff;
     transition: .5s;
 }
@@ -2013,7 +2013,9 @@ ul.post-categories li {
     background-size: cover;
     position: relative;
 }
-
+.main-blog-title a:hover{
+    color: #fff;
+}
 .main-blog-title:before {
     position: absolute;
     content: '';
@@ -2058,7 +2060,7 @@ ul.post-categories li {
 
 .single-blog-text a {
     font-family: 'Poppins', sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 30px;
     display: block;
