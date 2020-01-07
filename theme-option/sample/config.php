@@ -544,6 +544,53 @@ Redux::setSection($opt_name, array(
             'default'   => 'Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft’s UI and UX services. Our design team is a small design studio within a large software com.'
 
         ),
+
+
+        array(
+            'title'     => __('Service Tab Menu-4', 'backspace'),
+            'id'        => 'ser-tab-menu-4',
+            'type'      => 'text',
+            'default'   => 'Web Development'
+        ),
+        array(
+            'title'     => __('Tab Image Upload-4', 'backspace'),
+            'id'        => 'ser-tab-img-4',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images/ux-logo.png'
+            )
+        ),
+        array(
+            'title'     => __('Tab Content Upload-4', 'backspace'),
+            'id'        => 'ser-tab-content-4',
+            'type'      => 'editor',
+            'default'   => 'Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft’s UI and UX services. Our design team is a small design studio within a large software com.'
+
+        ),
+
+        array(
+            'title'     => __('Service Tab Menu-5', 'backspace'),
+            'id'        => 'ser-tab-menu-5',
+            'type'      => 'text',
+            'default'   => 'Web Development'
+        ),
+        array(
+            'title'     => __('Tab Image Upload-5', 'backspace'),
+            'id'        => 'ser-tab-img-5',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images/ux-logo.png'
+            )
+        ),
+        array(
+            'title'     => __('Tab Content Upload-5', 'backspace'),
+            'id'        => 'ser-tab-content-5',
+            'type'      => 'editor',
+            'default'   => 'Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft’s UI and UX services. Our design team is a small design studio within a large software com.'
+
+        ),
+
+
         array(
             'title'     => __('Upload Image', 'backspace'),
             'id'        => 'crea-2-imag',

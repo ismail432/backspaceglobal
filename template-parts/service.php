@@ -56,7 +56,7 @@
     <div class="main-service-sec">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 offset-md-0 col-lg-9 offset-lg-3">
+                <div class="col-md-12  col-lg-12">
                     <div class="tab-part">
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs d-flex" role="tablist">
@@ -68,6 +68,12 @@
                             </li>
                             <li class="nav-item flex-fill">
                                 <a class="nav-link" data-toggle="tab" href="#menu2"><img src="<?php global $backspace; echo $backspace['ser-tab-img-3']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu-3'];  ?></a>
+                            </li>
+                            <li class="nav-item flex-fill">
+                                <a class="nav-link" data-toggle="tab" href="#menu3"><img src="<?php global $backspace; echo $backspace['ser-tab-img-3']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu-3'];  ?></a>
+                            </li>
+                            <li class="nav-item flex-fill">
+                                <a class="nav-link" data-toggle="tab" href="#menu4"><img src="<?php global $backspace; echo $backspace['ser-tab-img-3']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu-3'];  ?></a>
                             </li>
                         </ul>
 
@@ -100,6 +106,26 @@
                                     </div>
                                     <div class="col-md-8">
                                         <?php global $backspace; echo $backspace['ser-tab-content-3'];  ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu3" class="container tab-pane fade"><br>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h2><?php global $backspace; echo $backspace['ser-tab-menu-4'];  ?></h2>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <?php global $backspace; echo $backspace['ser-tab-content-4'];  ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu4" class="container tab-pane fade"><br>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h2><?php global $backspace; echo $backspace['ser-tab-menu-5'];  ?></h2>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <?php global $backspace; echo $backspace['ser-tab-content-5'];  ?>
                                     </div>
                                 </div>
                             </div>

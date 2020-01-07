@@ -593,8 +593,8 @@ function  backsp_service(){
     $ret = "";
     $args = array(
         'post_type' => 'service',
-        'orderby' => 'date',
-        'order'   => 'DESC',
+        'orderby' => 'title',
+        'order'   => 'ASC',
         'posts_per_page' => -1,
     );
     $q = new WP_Query($args);
