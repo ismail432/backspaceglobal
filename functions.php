@@ -5,6 +5,8 @@
  *  Custom functions, support, custom post types and more.
  */
 
+
+
 add_action( 'wp_head', 'slider_img' );
 
 function slider_img() {

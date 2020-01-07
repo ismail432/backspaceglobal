@@ -49,7 +49,9 @@
     </div>
     <!--About Us Area End-->
 
+<div id="main-service-sec">
 
+</div>
     <!--Main-service Area Start-->
     <div class="main-service-sec">
         <div class="container">
