@@ -2,9 +2,14 @@ var visible = true;
 var underscore = document.getElementById('console');
 var text = document.getElementById("text");
 var letCount = 1;
+var iterator = 0;
 
 var wordsCounter = function () {
-    return getRndInteger(0, words.length);
+    iterator++;
+    if (iterator>= words.length){
+        iterator=0;
+    }
+    return iterator;
 };
 
 function getRndInteger(min, max) {
