@@ -4,7 +4,7 @@ var text = document.getElementById("text");
 var letCount = 1;
 
 var wordsCounter = function () {
-    return Math.floor(Math.random() * 4)
+    return getRndInteger(0, words.length);
 };
 
 function getRndInteger(min, max) {
@@ -30,7 +30,7 @@ function showText(words) {
 
     window.setTimeout(function () {
         showText(words);
-    }, getRndInteger(200,600));
+    }, getRndInteger(20,300));
 }
 
 showText(words);
