@@ -669,6 +669,7 @@
         margin-bottom: 25px;
         text-align: center;
         line-height: 1.2;
+        margin-top: 70px;
     }
 
     .review-text h3 {
@@ -679,6 +680,7 @@
 
     .review-item {
         box-shadow: none;
+        background: none !important;
     }
 
     .review-image img {
@@ -1023,6 +1025,7 @@
 
     .all-services {
         text-align: center;
+        margin-bottom: 100px;
     }
 
     .pp-tableCell {
@@ -1041,7 +1044,7 @@
     }
 
     .service-sec .title h2 {
-        margin-top: 25px;
+        margin-top: 55px;
         margin-bottom: 25px;
         font-size: 22px;
     }
