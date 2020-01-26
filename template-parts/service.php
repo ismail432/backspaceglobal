@@ -70,10 +70,10 @@
                                 <a class="nav-link" data-toggle="tab" href="#menu2"><img src="<?php global $backspace; echo $backspace['ser-tab-img-3']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu-3'];  ?></a>
                             </li>
                             <li class="nav-item flex-fill">
-                                <a class="nav-link" data-toggle="tab" href="#menu3"><img src="<?php global $backspace; echo $backspace['ser-tab-img-3']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu-3'];  ?></a>
+                                <a class="nav-link" data-toggle="tab" href="#menu3"><img src="<?php global $backspace; echo $backspace['ser-tab-img-4']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu-4'];  ?></a>
                             </li>
                             <li class="nav-item flex-fill">
-                                <a class="nav-link" data-toggle="tab" href="#menu4"><img src="<?php global $backspace; echo $backspace['ser-tab-img-3']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu-3'];  ?></a>
+                                <a class="nav-link" data-toggle="tab" href="#menu4"><img src="<?php global $backspace; echo $backspace['ser-tab-img-5']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu-5'];  ?></a>
                             </li>
                         </ul>
 
