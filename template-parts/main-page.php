@@ -37,6 +37,16 @@
         </div>
         <!--Banner Area End-->
 
+    <div id="pp-nav" class="right" style="color: rgb(0, 0, 0); margin-top: -66.5px;">
+        <ul>
+            <li data-tooltip=""><a href="#" class="active"><span style="border-color: rgb(0, 0, 0);"></span></a></li>
+            <li data-tooltip=""><a href="#"><span style="border-color: rgb(0, 0, 0);"></span></a></li>
+            <li data-tooltip=""><a href="#"><span style="border-color: rgb(0, 0, 0);"></span></a></li>
+            <li data-tooltip=""><a href="#"><span style="border-color: rgb(0, 0, 0);"></span></a></li>
+            <li data-tooltip=""><a href="#"><span style="border-color: rgb(0, 0, 0);"></span></a></li>
+            <li data-tooltip=""><a href="#"><span style="border-color: rgb(0, 0, 0);"></span></a></li>
+        </ul>
+    </div>
 
         <!--Service Area Start-->
         <div class="section service-sec">
