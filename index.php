@@ -85,14 +85,14 @@
         </div>
     </div>
 
-    <!--<div class="container">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h2>Pagination</h2>
-                <?php /*the_posts_pagination(); */?>
+                <?php the_posts_pagination(); ?>
             </div>
         </div>
-    </div>-->
+    </div>
 
 <?php get_footer(); ?>
 </div>

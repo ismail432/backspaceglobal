@@ -2376,8 +2376,7 @@ section#blog-banner {
 #social-icon img {
     width: 24%;
 }
-
-/*************Pipeline css***************/
+/****************************/
 
 #pp-nav.right {
     right: 17px;
@@ -2425,35 +2424,7 @@ section#blog-banner {
     position: absolute;
     z-index: 1;
 }
-.po-un {
-    padding-bottom: 30px;
-}
-.po-un h2 {
-    border-bottom: 2px dashed #ddd;
-}
-.po-un span {
-    color: #840f0f;
-    font-size: 30px;
-}
-.post-under-cat h2{
-    font-size: 28px;
-    margin-top: 15px;
-}
-.post-under-cat img {
-    height: 200px;
-    width: 345px;
-}
-.post-under-cat {
-    margin-bottom: 30px;
-}
-article#post-404 {
-    margin-top: 200px;
-}
-article#post-404 h2 {
-    margin-top: 30px;
-    color: #7b5959;
-}
-/*************Pipeline css end***************/
+
 
 
 
