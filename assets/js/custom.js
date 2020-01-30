@@ -184,6 +184,18 @@
         }
     });
 
+    $(window).scroll(function() {
+        var scrollDistance = $(window).scrollTop();
+
+
+        // Assign active class to nav links while scolling
+        $('.section').each(function(i) {
+            if ($(this).position().top <= scrollDistance) {
+                $('.right a.active').removeClass('active');
+                $('.right a').eq(i).addClass('active');
+            }
+        });
+    }).scroll();
 
 
 

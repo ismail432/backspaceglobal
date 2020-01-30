@@ -163,11 +163,6 @@ label {
     font-weight: 700;
     color: #000000;
 }
-
-.section {
-    margin-top: 70px !important;
-}
-
 button:focus {
     outline: 0;
 }
@@ -321,7 +316,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
     text-align: center;
     color: #fff;
     font-size: 38px;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
 }
 
 .service-item {
@@ -2429,7 +2424,37 @@ section#blog-banner {
 /*======= Extra CSS =========*/
 .section {
     height: 100vh;
+    position: relative;
+    padding: 0;
+}
+.section .container {
+    position: absolute;
+    -ms-transform: translateY(-45%);
+    transform: translateY(-45%);
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 9;
 }
 
-
-
+.right {
+    position: fixed;
+    -ms-transform: translateY(-45%);
+    transform: translateY(-45%);
+    top: 50%;
+    right: 15px;
+    z-index: 99999;
+    padding: 8px;
+    background: #000;
+    border-radius: 4px;
+}
+.right li span {
+    width: 12px;
+    height: 12px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px;
+}.right .active span {
+    background: #fff;
+ }

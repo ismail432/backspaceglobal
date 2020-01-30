@@ -1,5 +1,5 @@
 <!--Footer Area Start-->
-<footer class="section footer-sec">
+<footer class="section footer-sec" id="footer-sec">
     <div class="container">
         <div class="footer-top">
             <div class="row">
@@ -16,9 +16,7 @@
 
             </div>
         </div>
-    </div>
-    <div class="footer-line"></div>
-    <div class="container">
+        <div class="footer-line"></div>
         <div class="footer-bottom">
             <div class="row">
                 <div class="col-md-6">
@@ -28,7 +26,7 @@
                 </div>
                 <div class="col-md-6 text-right">
                     <div class="footer-link">
-                        <?php copyright_first(); ?>
+					    <?php copyright_first(); ?>
                     </div>
                 </div>
             </div>
@@ -38,7 +36,6 @@
 <!--Footer Area End-->
 
 
-</div>
 
 
 <?php wp_footer(); ?>
