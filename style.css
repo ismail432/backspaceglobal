@@ -2400,6 +2400,7 @@ section#blog-banner {
     margin: 7px;
     position: relative;
 }
+
 #pp-nav li a{
     display: block;
     position: relative;
@@ -2424,11 +2425,11 @@ section#blog-banner {
     position: absolute;
     z-index: 1;
 }
-.test-class{
 
+/*======= Extra CSS =========*/
+.section {
+    height: 100vh;
 }
-
-
 
 
 
