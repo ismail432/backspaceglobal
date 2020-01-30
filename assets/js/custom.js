@@ -10,16 +10,23 @@
 (function ($) {
     "use strict";
 
+    $(window).scroll(function() {
+        var scrollDistance = $(window).scrollTop();
 
-  $(document).ready(function() {
-            $('#pagepiling').pagepiling();
+
+
+        // Assign active class to nav links while scolling
+        $('.section').each(function(i) {
+            if ($(this).position().top <= scrollDistance) {
+                $('.right a.active').removeClass('active');
+                $('.right a').eq(i).addClass('active');
+            }
         });
-
+    }).scroll();
 
     /*========================
             Brand Slider
         ==========================*/
-
     $(".brand-slider").owlCarousel({
         nav: true,
         navText: [
@@ -44,7 +51,6 @@
             }
         },
     });
-
 
     /*========================
         Service Slider
@@ -71,8 +77,6 @@
         },
     });
 
-   
-    
     /*========================
         Review Slider
     ==========================*/
@@ -129,9 +133,8 @@
         },
     });
 
-
     /*========================
-        Portfolio Slider
+        Meet Slider
     ==========================*/
     $(".meet-slider").owlCarousel({
         nav: true,
@@ -183,19 +186,6 @@
             target: '[data-ref~="mixitup-target"]'
         }
     });
-
-    $(window).scroll(function() {
-        var scrollDistance = $(window).scrollTop();
-
-
-        // Assign active class to nav links while scolling
-        $('.section').each(function(i) {
-            if ($(this).position().top <= scrollDistance) {
-                $('.right a.active').removeClass('active');
-                $('.right a').eq(i).addClass('active');
-            }
-        });
-    }).scroll();
 
 
 
