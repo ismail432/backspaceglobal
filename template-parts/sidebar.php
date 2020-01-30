@@ -38,7 +38,7 @@
                 <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('small', array('class' => 'post-thumb')); ?></a>
             </div>
             <div class="post-text">
-                <h6><?php the_title(); ?></h6>
+                <h6><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
                 <p><?php the_time('M d,Y'); ?></p>
             </div>
 

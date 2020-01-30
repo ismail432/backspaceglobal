@@ -2458,3 +2458,20 @@ section#blog-banner {
 }.right .active span {
     background: #fff;
  }
+.post-un{
+    padding: 125px 0px 50px 0px;
+}
+.post-un h2 {
+    border-bottom: 2px dashed;
+    font-size: 30px;
+}
+.post-un span {
+    font-size: 28px;
+    color: #b97979;
+}
+.error-page.text-center {
+    padding: 150px 0px 100px 0px;
+}
+.error-page h4 {
+    margin-top: 25px;
+}

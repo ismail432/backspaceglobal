@@ -87,7 +87,7 @@
             "<img src='"+ $("meta[keyword='image_portfolio_slider_NavText2']").attr("content")+"'>"
         ],
         loop: true,
-        dots: false,
+        dots: true,
         margin: 15,
         autoplay: false,
         responsive: {

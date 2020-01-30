@@ -631,7 +631,7 @@ function  brands(){
     $args = array(
         'post_type' => 'brand',
         'orderby' => 'date',
-        'order'   => 'DESC',
+        'order'   => 'ASC',
         'posts_per_page' => -1,
     );
     $q = new WP_Query($args);
@@ -667,7 +667,7 @@ function  reviews(){
     $args = array(
         'post_type' => 'review',
         'orderby' => 'date',
-        'order'   => 'DESC',
+        'order'   => 'ASC',
         'posts_per_page' => -1,
     );
     $q = new WP_Query($args);
@@ -677,7 +677,7 @@ function  reviews(){
         if(!empty($post_thumbnail_id)) {
             $featured_img =  wp_get_attachment_image_src( $post_thumbnail_id, 'review-img' );
         }
-        $ret .= '  <div class="review-item">
+        $ret .= ' <div class="review-item">
                         <div class="review-image">
                    <img src="'.$featured_img[0].'" alt="man">
                     </div>
@@ -704,7 +704,7 @@ function  faq(){
     $args = array(
         'post_type' => 'faq',
         'orderby' => 'date',
-        'order'   => 'DESC',
+        'order'   => 'ASC',
         'posts_per_page' => -1,
     );
     $q = new WP_Query($args);
@@ -751,7 +751,7 @@ function  team(){
     $args = array(
         'post_type' => 'our_team',
         'orderby' => 'date',
-        'order'   => 'DESC',
+        'order'   => 'ASC',
         'posts_per_page' => -1,
     );
     $q = new WP_Query($args);
@@ -793,7 +793,7 @@ function  meetslider(){
     $args = array(
         'post_type' => 'meet_slider',
         'orderby' => 'date',
-        'order'   => 'DESC',
+        'order'   => 'ASC',
         'posts_per_page' => -1,
     );
     $q = new WP_Query($args);
@@ -826,7 +826,7 @@ function  lookfor(){
     $args = array(
         'post_type' => 'look_for',
         'orderby' => 'date',
-        'order'   => 'DESC',
+        'order'   => 'ASC',
         'posts_per_page' => -1,
     );
     $q = new WP_Query($args);
@@ -877,7 +877,7 @@ function backspace_gallery_photos()
     $args = array(
         'post_type' => 'gallery',
         'orderby' => 'date',
-        'order' => 'DESC',
+        'order' => 'ASC',
         'posts_per_page' => -1,
     );
     $q = new WP_Query($args);
