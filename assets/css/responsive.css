@@ -500,7 +500,7 @@
     }
 
     nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
-        height: 55px;
+        height: initial;
         line-height: 1;
     }
 
@@ -513,13 +513,12 @@
         margin-right: 15px;
     }
 
-    div#navbarSupportedContent {
+   #navbarSupportedContent {
         background: #fff;
-        border-top: 1px solid #999;
-        border-bottom: 1px solid #999;
         margin-top: 5px;
         padding-top: 10px;
         padding-bottom: 25px;
+        box-shadow: 0px 0px 20px 4px #ddd;
     }
 
     div#navbarSupportedContent li {
