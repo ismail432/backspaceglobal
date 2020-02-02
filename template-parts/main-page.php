@@ -39,7 +39,6 @@
                 <li><a href="#service-sec"><span></span></a></li>
                 <li><a href="#brand-sec"><span></span></a></li>
                 <li><a href="#review-sec"><span></span></a></li>
-                <li><a href="#footer-sec"><span></span></a></li>
             </ul>
         </div>
 

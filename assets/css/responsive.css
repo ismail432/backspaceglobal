@@ -485,8 +485,8 @@
         margin-bottom: 35px;
 
     }
-    ul#menu-footer-first-menu li a {
-        display: inline-flex;
+    .first-footer-part i {
+        display: block;
     }
     .footer-sec a {
         font-size: 14px;
@@ -495,10 +495,9 @@
 
 
 @media only screen and (max-width: 767px) {
-    #pp-nav.right {
+    .right {
         display: none;
     }
-
     nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
         height: initial;
         line-height: 1;
@@ -1212,6 +1211,15 @@
     }
 .portfolio-slider  .owl-next {
         display: none;
+    }
+    .section {
+        height: auto !important;
+    }
+    .section .container {
+        position: relative;
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        top: 0;
     }
 }
 
