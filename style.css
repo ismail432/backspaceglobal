@@ -604,9 +604,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 
 .team-sec {
     background-color: #fff;
-    background-image: url(assets/images/team-bg.png);
-    background-repeat: no-repeat;
-    background-position: left bottom;
 }
 
 .team-title {
