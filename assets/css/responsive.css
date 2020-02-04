@@ -491,6 +491,36 @@
     .footer-sec a {
         font-size: 14px;
     }
+    .navbar-light .navbar-toggler {
+        color: #fff;
+        border-color: #fff;
+    }
+    .header-sec .navbar-light .navbar-brand {
+        margin-left: 10px;
+    }
+    .navbar-brand img {
+        padding: 0;
+        height: 50px;
+        width: 50px;
+    }
+    .header-sec .navbar-light .navbar-nav .nav-link {
+        color: #777;
+    }
+    #navbarSupportedContent {
+        padding: 0;
+    }
+    #navbarSupportedContent ul {
+        padding: 10px;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url(../images/menu_icon.png);
+    }
+    .navbar-light .navbar-toggler {
+        padding: 5px;
+    }
+    .nav-right-side {
+        display: none;
+    }
 }
 
 

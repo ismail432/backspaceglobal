@@ -604,6 +604,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 
 .team-sec {
     background-color: #fff;
+    background: url(assets/images/contact-bg.png) no-repeat fixed;
+    background-position: center;
 }
 
 .team-title {
@@ -648,6 +650,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 .card {
     border: 0;
     background: #fff;
+    padding: 0 10px;
 }
 
 .card {
@@ -779,6 +782,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
     background-size: 100% 100%;
     background-position: center;
     padding-top: 125px;
+    padding-bottom: 25px;
 }
 
 .about-us-sec h5 {
@@ -812,8 +816,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 ==============================*/
 
 .team-member-sec {
-    padding-top: 130px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .team-member-sec .title {
@@ -2434,4 +2437,46 @@ section#blog-banner {
 }
 .error-page h4 {
     margin-top: 25px;
+}
+
+.header-sec .nav-link {
+    position:relative;
+}
+.header-sec .nav-link:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    bottom: 20px;
+    left : 10%;
+    transition: .5s;
+}
+.header-sec .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    top: 20px;
+    right : 10%;
+    transition: .5s;
+}
+.header-sec li {
+    transition: .5s;
+}
+
+.header-sec li:hover .nav-link:after {
+     width: 80%;
+ }
+
+.header-sec .active .nav-link:after {
+    width: 80%;
+}
+.header-sec li:hover .nav-link:before {
+     width: 80%;
+ }
+
+.header-sec .active .nav-link:before {
+    width: 80%;
 }
