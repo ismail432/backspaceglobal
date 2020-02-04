@@ -778,7 +778,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
     background: url(assets/images/about-us-bg.png) no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    padding: 125px 0;
+    padding-top: 125px;
 }
 
 .about-us-sec h5 {
@@ -926,7 +926,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 
 .main-service-sec .nav-item a.active {
     background: #efefef;
-    color: #fff;
+    color: #000;
 }
 
 .main-service-sec .nav-tabs {

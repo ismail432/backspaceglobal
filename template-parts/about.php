@@ -43,18 +43,6 @@
                 </div>
             </div>
         </div>
-        <div class="about-link">
-            <div class="row">
-                <div class="col-md-4 offset-md-3">
-                    <h2><?php global $backspace; echo $backspace['about-link-head'];  ?></h2>
-                    <?php global $backspace; echo $backspace['about-link-list'];  ?>
-                </div>
-                <div class="col-md-5">
-                    <h2><?php global $backspace; echo $backspace['about-link-head-2nd'];  ?></h2>
-                    <?php global $backspace; echo $backspace['about-link-list-2nd'];  ?>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 <!--About Us Area End-->
