@@ -928,7 +928,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 }
 
 .main-service-sec .nav-item a.active {
-    background: #695b5b;
+    background: #efefef;
     color: #fff;
 }
 
@@ -947,6 +947,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
     font-size: 32px;
     display: inline-block;
     position: relative;
+    float: right;
 }
 
 .main-service-sec h2:before {
@@ -1039,7 +1040,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 .portfolio-tab li {
     font-size: 20px;
     padding: 25px 0;
-    color: #1976D2;
 }
 
 .portfolio-tab li:hover {
