@@ -782,7 +782,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
     background-size: 100% 100%;
     background-position: center;
     padding-top: 125px;
-    padding-bottom: 25px;
+    padding-bottom: 150px;
 }
 
 .about-us-sec h5 {
@@ -793,7 +793,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 }
 
 .about-text {
-    margin-bottom: 115px;
+    margin: 50px 0;
+    display: inline-flex;
 }
 
 .about-us-sec h2 {
@@ -913,7 +914,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 ==============================*/
 .main-service-sec {
     padding-bottom: 100px;
-    margin-top: -50px;
+    margin-top: -35px;
 }
 
 .main-service-sec .nav-item a {

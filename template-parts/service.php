@@ -138,30 +138,4 @@
     <!--Main-service Area End-->
 
 
-    <!--Career Area Start-->
-    <div class="balb-sec" style="background: url(<?php global $backspace; echo $backspace['balb-bg']['url'];  ?>"></div>
-    <!--Career Area End-->
-
-
-    <!--Creative Area Start-->
-    <div class="creative-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-7">
-                    <div class="creative-image">
-                        <img src="<?php global $backspace; echo $backspace['crea-2-imag']['url'];  ?>" alt="Photo">
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6">
-                    <div class="creative-text">
-                        <h3> <?php global $backspace; echo $backspace['crea-2-head'];  ?></h3>
-                        <p><?php global $backspace; echo $backspace['crea-2-content'];  ?></p>
-                        <a href="#"> <?php global $backspace; echo $backspace['crea-2-btn'];  ?></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Creative Area End-->
-
 <?php get_footer(); ?>
