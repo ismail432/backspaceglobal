@@ -51,7 +51,7 @@ if (function_exists('add_theme_support'))
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
     add_image_size('custom-size', 500, 300, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
-    add_image_size('ser-img', 198, 198, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('ser-img', 110, 110, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
     add_image_size('brand-img', 500, 750, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
     add_image_size('review-img', 500, 750, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
     add_image_size('team-img', 350, 350, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
@@ -533,26 +533,19 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 // Shortcodes above would be nested like this -
 // [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
 
-/*------------------------------------*\
-	Custom Post Types
-\*------------------------------------*/
 
 
 /*------------------------------------*\
 	ShortCode Functions
 \*------------------------------------*/
 
-// Shortcode Demo with Nested Capability
-function html5_shortcode_demo($atts, $content = null)
-{
-    return '<div class="shortcode-demo">' . do_shortcode($content) . '</div>'; // do_shortcode allows for nested Shortcodes
-}
 
-// Shortcode Demo with simple <h2> tag
-function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
-{
-    return '<h2>' . $content . '</h2>';
-}
+
+/*------------------------------------*\
+	Custom Post Types
+\*------------------------------------*/
+
+
 /*------------------------------------*\
 	Banner Area
 \*------------------------------------*/

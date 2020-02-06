@@ -34,8 +34,8 @@
 
                         <form class="form-inline my-2 my-lg-0">
                             <ul class="navbar nav-right-side mr-auto">
-                                <li class="nav-item"><a href="#"><?php global $backspace; echo $backspace['phone-number'];  ?></a></li>
-                                <li class="nav-item"><a href="#"><?php global $backspace; echo $backspace['email-id'];  ?></a></li>
+                                <li class="nav-item"><a href="tel:+8801717987058"><?php global $backspace; echo $backspace['phone-number'];  ?></a></li>
+                                <li class="nav-item"><a href="mailto:admin.backspaceglobal@gmail.com"><?php global $backspace; echo $backspace['email-id'];  ?></a></li>
                                 <li class="search"><a href="#"><i class="fas fa-search"></i></a></li>
                             </ul>
                         </form>
