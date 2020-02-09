@@ -19,7 +19,7 @@
 
 
 <!--About Us Area Start-->
-<div class="about-us-sec">
+<div class="about-us-sec" style="background: url(<?php global $backspace; echo $backspace['about-banner-image']['url'];  ?>) no-repeat;">
     <div class="container">
         <div class="about-text">
             <div class="row">

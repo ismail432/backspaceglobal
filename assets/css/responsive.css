@@ -521,6 +521,9 @@
     .nav-right-side {
         display: none;
     }
+    .team-title {
+        width: initial;
+    }
 }
 
 

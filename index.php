@@ -2,7 +2,7 @@
 
 <?php /* Template Name: Blog */ get_header(); ?>
 
-    <div class="main-blog-title">
+    <div class="main-blog-title" style="background: url(<?php global $backspace; echo $backspace['main-blog-bg']['url'];  ?>" alt="Photo"">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

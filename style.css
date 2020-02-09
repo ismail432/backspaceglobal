@@ -309,11 +309,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 		Service CSS
 ==============================*/
 .service-sec {
-    background-image: url(assets/images/shade-bg.png) ;
-    background-color: #1976D2;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 75% 100%;
+    background-color: #1976D2 !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 75% 100% !important;
 }
 
 .service-sec .title h2 {
@@ -500,10 +499,9 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 ==============================*/
 
 .review-sec {
-    background-color: #fff;
-    background-image: url(assets/images/testimonial-bg.png);
-    background-size: 100% 100%;
-    background-position: center;
+    background-color: #fff !important;
+    background-size: 100% 100% !important;
+    background-position: center !important;
 }
 
 .review-title h2 {
@@ -775,10 +773,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 ==============================*/
 
 .about-us-sec {
-    background: url(assets/images/about-us-bg.png) no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    padding-top: 125px;
+    background-size: 100% 100% !important;
+    background-position: center !important;
+    padding-top: 125px !important;
+    background-color: #1976D2 !important;
 }
 
 .about-us-sec h5 {
@@ -789,7 +787,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 }
 
 .about-text {
-    margin-bottom: 115px;
+    padding-bottom: 115px;
 }
 
 .about-us-sec h2 {
@@ -797,14 +795,14 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
     color: #fff;
     font-size: 26px;
     line-height: 1.5;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     margin-top: 0;
 }
 
 .about-us-sec p {
     color: #fff;
     font-size: 16px;
-    line-height: 1.3;
+
 }
 
 /*============================
@@ -864,10 +862,11 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 }
 
 .career-sec {
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     height: 400px;
     width: 100%;
+    background-size: cover !important;
 }
 
 .balb-sec {
@@ -1894,15 +1893,14 @@ ul.post-categories li {
 ==============================*/
 
 .footer-sec {
-    background-image: url(assets/images/shade-bg2.png) ;
-    background-color: #1976D2;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 75% 100%;
+    background-color: #1976D2 !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 75% 100% !important;
     padding-top: 75px;
     color: #fff;
     height: 100%;
-    position: relative;
+    position: relative !important;
 }
 
 .footer-sec h3 {
@@ -2004,8 +2002,7 @@ ul.post-categories li {
 .main-blog-title {
     margin-top: 80px;
     height: 550px;
-    background: url(assets/images/blog-bg.jpg) no-repeat;
-    background-size: cover;
+    background-size: cover !important;
     position: relative;
 }
 .main-blog-title a:hover{

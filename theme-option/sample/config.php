@@ -283,39 +283,65 @@ Redux::setSection($opt_name, array(
      )
 ));
 
+
 Redux::setSection($opt_name, array(
-    'title'     => __('About Banner Options', 'backspace'),
+    'title'     => __('Home Page', 'backspace'),
+    'id'        => 'home-area',
+    'fields'    => array(
+        array(
+            'title'     => __('Service BG Upload', 'backspace'),
+            'id'        => 'service-bg',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images//shade-bg2.png'
+            )
+        ),
+        array(
+            'title'     => __('Testimonial BG Upload', 'backspace'),
+            'id'        => 'testi-bg',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images//shade-bg2.png'
+            )
+        )
+    )
+));
+
+
+Redux::setSection($opt_name, array(
+    'title'     => __('About Page', 'backspace'),
     'id'        => 'blog-banner-area',
     'fields'    => array(
         array(
-            'title'     => __('Blog Banner Title', 'backspace'),
+            'title'     => __('About Banner Title', 'backspace'),
             'id'        => 'blog-banner-title',
             'type'      => 'text',
             'default'   => 'A creative team of professionals who love the digital.'
             ),
 
         array(
-            'title'     => __('Blog Banner Content', 'backspace'),
+            'title'     => __('About Banner Content', 'backspace'),
             'id'        => 'blog-banner-content',
             'type'      => 'editor',
             'default'   => 'Level Level is a full service digital agency consisting of more than 24 professionals. We create and support large-scale websites and offer consultancy services to enterprise clients. We help brands connect to their customers by creating outstanding websites and applications that offer the best user experience on any device.'
 
         ),
         array(
-            'title'     => __('Blog Banner Image', 'backspace'),
+            'title'     => __('Team Banner Image', 'backspace'),
             'id'        => 'team-banner-image',
             'type'      => 'media',
             'default'   => array(
                 'url'   => get_template_directory_uri() . '/assets/images/team-banner.png'
             ),
         ),
-     ),
-));
-
-Redux::setSection($opt_name, array(
-    'title'     => __('About-us-section', 'backspace'),
-    'id'        => 'about-area',
-    'fields'    => array(
+        array(
+            'title'     => __('About Banner Image', 'backspace'),
+            'id'        => 'about-banner-image',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri() . '/assets/images/team-banner.png'
+            ),
+        ),
         array(
             'title'     => __('About Subtitle', 'backspace'),
             'id'        => 'about-subtitle',
@@ -377,21 +403,14 @@ Redux::setSection($opt_name, array(
             'type'      => 'editor',
 
         ),
-    )
-));
-
-Redux::setSection($opt_name, array(
-    'title'     => __('Creative-Section', 'backspace'),
-    'id'        => 'creative-image',
-    'fields'    => array(
-        array(
-            'title'     => __('Career bg Upload', 'backspace'),
-            'id'        => 'career-bg',
-            'type'      => 'media',
-            'default'   => array(
-                'url'   => get_template_directory_uri(). '/assets/images/career-img.png'
-            )
-        ),
+         array(
+             'title'     => __('Career bg Upload', 'backspace'),
+             'id'        => 'career-bg',
+             'type'      => 'media',
+             'default'   => array(
+                 'url'   => get_template_directory_uri(). '/assets/images/career-img.png'
+             )
+         ),
         array(
             'title'     => __('Upload Image', 'backspace'),
             'id'        => 'crea-imag',
@@ -412,9 +431,12 @@ Redux::setSection($opt_name, array(
               'type'      => 'text',
               'default'   => 'View Openings'
           )
-
-    )
+     ),
 ));
+
+
+
+
 
 
 
@@ -523,27 +545,8 @@ Redux::setSection($opt_name, array(
             'default'   => 'Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft’s UI and UX services. Our design team is a small design studio within a large software com.'
 
         ),
-        array(
-            'title'     => __('Service Tab Menu-3', 'backspace'),
-            'id'        => 'ser-tab-menu-3',
-            'type'      => 'text',
-            'default'   => 'Web Development'
-        ),
-        array(
-            'title'     => __('Tab Image Upload-3', 'backspace'),
-            'id'        => 'ser-tab-img-3',
-            'type'      => 'media',
-            'default'   => array(
-                'url'   => get_template_directory_uri(). '/assets/images/ux-logo.png'
-            )
-        ),
-        array(
-            'title'     => __('Tab Content Upload-3', 'backspace'),
-            'id'        => 'ser-tab-content-3',
-            'type'      => 'editor',
-            'default'   => 'Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Intellectsoft’s UI and UX services. Our design team is a small design studio within a large software com.'
 
-        ),
+
 
 
         array(
@@ -643,6 +646,22 @@ Redux::setSection($opt_name, array(
     ));
 
 
+
+Redux::setSection($opt_name, array(
+    'title'     => __('Main Blog Bg', 'backspace'),
+    'id'        => 'main-blog-area',
+    'fields'    => array(
+        array(
+            'title'     => __('Blog BG Upload', 'backspace'),
+            'id'        => 'main-blog-bg',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images/blog-bg-jpg'
+            )
+        )
+    )
+));
+
 Redux::setSection($opt_name, array(
     'title'     => __('Top Contact Section', 'backspace'),
     'id'        => 'top-contact-area',
@@ -662,6 +681,20 @@ Redux::setSection($opt_name, array(
     )
 ));
 
+Redux::setSection($opt_name, array(
+    'title'     => __('Footer BG', 'backspace'),
+    'id'        => 'footer-area',
+    'fields'    => array(
+        array(
+            'title'     => __('Footer BG Upload', 'backspace'),
+            'id'        => 'footer-bg',
+            'type'      => 'media',
+            'default'   => array(
+                'url'   => get_template_directory_uri(). '/assets/images/footer-bg.png'
+            )
+        )
+    )
+));
 
 
 

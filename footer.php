@@ -1,5 +1,5 @@
 <!--Footer Area Start-->
-<footer class="section footer-sec" id="footer-sec">
+<footer class="section footer-sec" id="footer-sec" style="background: url(<?php global $backspace; echo $backspace['footer-bg']['url'];  ?>" alt="Photo"">
     <div class="container">
         <div class="footer-top">
             <div class="row">

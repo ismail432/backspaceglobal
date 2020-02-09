@@ -49,7 +49,7 @@
 
 
     <!--Service Area Start-->
-    <div class="section service-sec" id="service-sec">
+    <div class="section service-sec" id="service-sec" style="background: url(<?php global $backspace; echo $backspace['service-bg']['url'];  ?>" alt="Photo"">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -106,7 +106,7 @@
 
 
     <!--Review Area Start-->
-    <div class="section review-sec" id="review-sec">
+    <div class="section review-sec" id="review-sec" style="background: url(<?php global $backspace; echo $backspace['testi-bg']['url'];  ?>" alt="Photo"">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-5">

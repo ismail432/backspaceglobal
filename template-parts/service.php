@@ -66,9 +66,7 @@
                             <li class="nav-item flex-fill">
                                 <a class="nav-link" data-toggle="tab" href="#menu1"><img src="<?php global $backspace; echo $backspace['ser-tab-img-2']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu-2'];  ?></a>
                             </li>
-                            <li class="nav-item flex-fill">
-                                <a class="nav-link" data-toggle="tab" href="#menu2"><img src="<?php global $backspace; echo $backspace['ser-tab-img-3']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu-3'];  ?></a>
-                            </li>
+
                             <li class="nav-item flex-fill">
                                 <a class="nav-link" data-toggle="tab" href="#menu3"><img src="<?php global $backspace; echo $backspace['ser-tab-img-4']['url'];  ?>" alt="Photo"><?php global $backspace; echo $backspace['ser-tab-menu-4'];  ?></a>
                             </li>
@@ -99,16 +97,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="menu2" class="container tab-pane fade"><br>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <h2><?php global $backspace; echo $backspace['ser-tab-menu-3'];  ?></h2>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <?php global $backspace; echo $backspace['ser-tab-content-3'];  ?>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div id="menu3" class="container tab-pane fade"><br>
                                 <div class="row">
                                     <div class="col-md-4">
