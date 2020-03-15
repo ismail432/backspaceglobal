@@ -5,7 +5,7 @@
       <paths name="backspacespaceglobal">
         <serverdata>
           <mappings>
-            <mapping deploy="/wp-content/themes/backspaceglobal" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/www/wp-content/themes/backspaceglobal" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

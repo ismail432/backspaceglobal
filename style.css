@@ -831,11 +831,25 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 }
 
 .team-member {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .team-member-image img {
+    transition: all .6s ease-out;
     margin-bottom: 50px;
+    border-radius: 0px 30px 0px 30px;
+    border: 5px solid #e6e2e2;
+}
+.team-member-image {
+    overflow: hidden;
+
+}
+.team-member-image img:hover {
+    transform: scale(1.2);
+    transition: all .6s ease-in;
+    filter: brightness(.8);
+    border: none;
+    border-radius: 70px;
 }
 
 .team-member a {
